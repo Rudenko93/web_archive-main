@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { Layout } from "./components/Layout"
 import { TypographyPage } from "./pages"
-import "./App.css"
+import "./App.scss"
 import { ERoutes } from "./enums/routes"
 import { Switch } from "./components/Switch/Switch"
 

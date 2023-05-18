@@ -1,0 +1,5 @@
+@mixin btn($gradient) {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, $gradient) border-box;
+  @extend %border-shadow;
+}
