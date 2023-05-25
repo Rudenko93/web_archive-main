@@ -1,15 +1,15 @@
-import React, { memo } from "react"
-import { ERoutes } from "../../../enums/routes"
-import { Link, NavLink } from "react-router-dom"
+import { memo } from "react"
+import { EUiRoutes } from "../../../enums/routes"
+import { NavLink } from "react-router-dom"
 import { toCapitalize } from "../../utils"
-import "./Menu.scss"
+import "./MenuUi.scss"
 
-const navList = [ERoutes.Switch, ERoutes.Typography]
+const navList = [EUiRoutes.Switch, EUiRoutes.Typography]
 
-export const Menu = memo(() => {
+export const MenuUi = memo(() => {
   return (
-    <div className="menu">
-      <div className="menu-list">
+    <div className="menuUi">
+      <div className="menuUi-list">
         {navList.map((link) => (
           <NavLink
             className={({ isActive }) =>

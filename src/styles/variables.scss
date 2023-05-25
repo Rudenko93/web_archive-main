@@ -43,3 +43,31 @@ $color-bg-input-hover: rgba(228, 235, 243, 1); /* #e4ebf3 */
 $overlayOpacity: 0.6;
 $transition: 0.15s;
 $border-radius: 4px;
+$box-shadow: 0 2px 2px 0 #000;
+
+// new
+//light
+
+$color-text-light: black;
+$color-text-active-light: rgba(176, 151, 106, 1);
+
+$color-border-light: blue;
+$color-border-bottom-light: blue;
+
+$color-bg-main-light: white;
+$color-menu-bg-light: #ffbc003d;
+
+//dark
+
+$color-text-dark: white;
+$color-text-active-dark: green;
+
+$color-border-dark: green;
+$color-border-bottom-dark: green;
+
+$color-bg-main-dark: #21092f;
+$color-menu-bg-dark: #370654;
+
+//special
+
+$color-text-special: red;

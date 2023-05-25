@@ -1,0 +1,39 @@
+@import "../../../styles/";
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: $color-menu-bg-light;
+  color: $color-text-light;
+  &-left {
+    display: flex;
+    position: absolute;
+    left: 20px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all $transition;
+
+    &__active {
+      color: $color-text-active-light;
+    }
+
+    &:hover {
+      background-color: $color-text-active-light;
+      color: $color-text-dark;
+    }
+  }
+
+  &-right {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+}

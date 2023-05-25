@@ -1,5 +1,4 @@
-import React from "react"
-import { ETypographyVariant, Typography } from "../components/Typography"
+import { ETypographyVariant, Typography } from "../../components/Typography"
 
 export const TypographyPage = () => {
   return (
