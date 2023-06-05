@@ -11,13 +11,12 @@ export const MenuUi = memo(() => {
     <div className="menuUi">
       <div className="menuUi-list">
         {navList.map((link) => (
-          <div className="link-wrapper">
+          <div className="link-wrapper" key={link}>
             <NavLink
               className={({ isActive }) =>
                 isActive ? "menuUi-link menuUi-link__active" : "menuUi-link"
               }
-              to={link}
-              key={link}>
+              to={link}>
               {toCapitalize(link)}
             </NavLink>
           </div>

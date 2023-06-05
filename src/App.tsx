@@ -1,11 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { MainLayout } from "./components/Layouts"
-import { TypographyPage } from "./pages/TypographyPage"
+import { TypographyPage, UiPage, HooksPage } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
-import { Switch } from "./components/Switch/Switch"
-import { UiPage } from "./pages/UiPage"
-import { HooksPage } from "./pages"
 import { HomeUi } from "./components/HomeUi"
+
+import { SwitchPage } from "./pages/SwitchPage"
 import "./App.scss"
 
 const router = createBrowserRouter([
@@ -18,12 +17,12 @@ const router = createBrowserRouter([
         element: <UiPage />,
         children: [
           {
-            path: "",
+            path: EUiRoutes.Home,
             element: <HomeUi />,
           },
           {
             path: EUiRoutes.Switch,
-            element: <Switch />,
+            element: <SwitchPage />,
           },
           {
             path: EUiRoutes.Typography,

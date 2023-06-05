@@ -1,5 +1,5 @@
 export enum EUiRoutes {
-  Home = "/",
+  Home = "",
   Typography = "typography",
   Switch = "switch",
 }
