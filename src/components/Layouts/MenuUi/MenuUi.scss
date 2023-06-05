@@ -1,0 +1,53 @@
+@import "../../../styles/";
+
+.menuUi {
+  // display: none;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgb(228, 228, 228);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 3;
+  margin-top: 53px;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &-link {
+    position: relative;
+    margin: 8px auto;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all $transition;
+
+    &:after {
+      content: "";
+      width: 0;
+      transition: width 0.1s linear;
+    }
+
+    &__active {
+      color: $color-primary;
+    }
+
+    &:hover::after {
+      content: "";
+
+      position: absolute;
+      left: 0%;
+
+      display: block;
+
+      width: 100%;
+      height: 2px;
+      margin-top: 5px;
+
+      background-color: black;
+    }
+  }
+}

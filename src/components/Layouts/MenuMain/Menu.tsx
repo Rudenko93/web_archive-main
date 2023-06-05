@@ -32,7 +32,7 @@ export const Menu = () => {
             }
             to={link}
             key={link}>
-            {toCapitalize(link.slice(1))}
+            {toCapitalize(link)}
           </NavLink>
         ))}
       </div>

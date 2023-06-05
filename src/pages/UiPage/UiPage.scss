@@ -1,0 +1,11 @@
+.uiPage {
+  &-container {
+    max-width: 1235px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0 15px 100px 20px;
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+}
