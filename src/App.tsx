@@ -4,7 +4,7 @@ import { TypographyPage, UiPage, HooksPage } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
 
-import { SwitchPage } from "./pages/SwitchPage"
+import { SwitchPage } from "./pages/SwitcherPage"
 import "./App.scss"
 
 const router = createBrowserRouter([
