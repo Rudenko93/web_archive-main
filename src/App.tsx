@@ -1,10 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { MainLayout } from "./components/Layouts"
-import { TypographyPage, UiPage, HooksPage } from "./pages"
+import {
+  TypographyPage,
+  UiPage,
+  HooksPage,
+  ButtonPage,
+  SwitcherPage,
+} from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
-
-import { SwitchPage } from "./pages/SwitcherPage"
 import "./App.scss"
 
 const router = createBrowserRouter([
@@ -21,8 +25,12 @@ const router = createBrowserRouter([
             element: <HomeUi />,
           },
           {
+            path: EUiRoutes.Button,
+            element: <ButtonPage />,
+          },
+          {
             path: EUiRoutes.Switch,
-            element: <SwitchPage />,
+            element: <SwitcherPage />,
           },
           {
             path: EUiRoutes.Typography,
