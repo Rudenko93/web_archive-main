@@ -1,0 +1,41 @@
+@import "../../styles/";
+
+.Button {
+  height: max-content;
+  width: max-content;
+  outline: transparent;
+  cursor: pointer;
+
+  background-color: $color-primary;
+
+  padding: 12px 32px;
+  border: 1px solid $color-primary;
+  border-radius: $border-radius;
+
+  transition: $transition;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &_disabled {
+    cursor: default;
+    color: $color-disabled;
+    background-color: $color-disabled-secondary;
+    border-color: $color-disabled-secondary;
+
+    &:hover {
+      color: $color-disabled;
+      background-color: $color-disabled-secondary;
+      border-color: $color-disabled-secondary;
+    }
+    &:active {
+      transform: none;
+    }
+  }
+}

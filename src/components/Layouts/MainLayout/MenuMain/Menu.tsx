@@ -1,9 +1,9 @@
 import { FaTelegramPlane } from "react-icons/fa"
 import { FaGitSquare } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
-import { SwitcherCustom } from "../../../SwitcherCustom/SwitcherCustom"
+import { SwitcherCustom } from "../../../../ui/SwitcherCustom/SwitcherCustom"
 import { EMainRoutes } from "../../../../enums/routes"
-import { toCapitalize } from "../../../utils"
+import { toCapitalize } from "../../../../utils"
 import "./Menu.scss"
 
 const navList = [

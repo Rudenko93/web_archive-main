@@ -1,4 +1,4 @@
-import { ETypographyVariant, Typography } from "../../components/Typography"
+import { ETypographyVariant, Typography } from "../../ui/Typography"
 import "./SwitcherPage.scss"
 
 export const SwitcherPage = () => {

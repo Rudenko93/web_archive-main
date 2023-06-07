@@ -5,6 +5,7 @@ import {
   UiPage,
   HooksPage,
   ButtonPage,
+  IconPage,
   SwitcherPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Button,
             element: <ButtonPage />,
+          },
+          {
+            path: EUiRoutes.Icon,
+            element: <IconPage />,
           },
           {
             path: EUiRoutes.Switch,

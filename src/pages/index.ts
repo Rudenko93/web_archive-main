@@ -1,5 +1,6 @@
 export * from "./TypographyPage"
 export * from "./HooksPage"
+export * from "./IconPage"
 export * from "./UiPage"
 export * from "./SwitcherPage"
 export * from "./ButtonPage"
