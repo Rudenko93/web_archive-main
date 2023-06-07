@@ -41,9 +41,11 @@ $color-bg-input: rgba(236, 241, 247, 1); /* #ecf1f7 */
 $color-bg-input-hover: rgba(228, 235, 243, 1); /* #e4ebf3 */
 
 $overlayOpacity: 0.6;
-$transition: 0.15s;
+$transition: all 0.3s;
 $border-radius: 4px;
-$box-shadow: 0 2px 2px 0 #000;
+$box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+$background-gradient: linear-gradient(white, white) padding-box,
+  linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
 
 // new
 //light
