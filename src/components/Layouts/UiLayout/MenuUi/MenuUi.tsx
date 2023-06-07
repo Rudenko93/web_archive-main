@@ -4,7 +4,12 @@ import { NavLink } from "react-router-dom"
 import { toCapitalize } from "../../../../utils"
 import "./MenuUi.scss"
 
-const navList = [EUiRoutes.Button, EUiRoutes.Switch, EUiRoutes.Typography]
+const navList = [
+  EUiRoutes.Button,
+  EUiRoutes.Icon,
+  EUiRoutes.Switch,
+  EUiRoutes.Typography,
+]
 
 export const MenuUi = memo(() => {
   return (

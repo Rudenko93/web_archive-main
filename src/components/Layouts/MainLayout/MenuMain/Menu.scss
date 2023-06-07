@@ -2,6 +2,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: $color-menu-bg-light;
   color: $color-text-light;
@@ -35,5 +36,6 @@
     display: flex;
     position: absolute;
     right: 20px;
+    gap: 15px;
   }
 }

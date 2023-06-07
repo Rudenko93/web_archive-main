@@ -1,10 +1,9 @@
-import { FaTelegramPlane } from "react-icons/fa"
-import { FaGitSquare } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
 import { SwitcherCustom } from "../../../../ui/SwitcherCustom/SwitcherCustom"
 import { EMainRoutes } from "../../../../enums/routes"
 import { toCapitalize } from "../../../../utils"
 import "./Menu.scss"
+import { Icon } from "../../../../ui/Icon"
 
 const navList = [
   EMainRoutes.Ui,
@@ -38,8 +37,8 @@ export const Menu = () => {
       </div>
 
       <div className="menu-right">
-        <FaGitSquare />
-        <FaTelegramPlane />
+        <Icon type="Telegram" width={30} height={30} />
+        <Icon type="Git" width={30} height={30} />
       </div>
     </div>
   )
