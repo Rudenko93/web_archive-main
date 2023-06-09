@@ -9,6 +9,8 @@ interface IButtonProps extends DOMAttributes<HTMLButtonElement> {
   onClick?: (event: React.MouseEvent) => void
   className?: string
   typeIcon?: IconType
+  iconWidth?: number
+  iconHeight?: number
 }
 
 export const Button: React.FC<IButtonProps> = ({
@@ -18,6 +20,8 @@ export const Button: React.FC<IButtonProps> = ({
   onClick,
   children,
   typeIcon,
+  iconWidth,
+  iconHeight,
 }) => {
   return (
     <button
@@ -27,7 +31,9 @@ export const Button: React.FC<IButtonProps> = ({
       className={clsx("Button", className, {
         Button_disabled: isDisabled,
       })}>
-      {typeIcon && <Icon type="ArrowRight" />}
+      {typeIcon && (
+        <Icon type="ArrowRight" width={iconWidth} height={iconHeight} />
+      )}
       <span className={clsx({ textWithIcon: typeIcon })}>{children}</span>
     </button>
   )
