@@ -1,0 +1,63 @@
+@import "../../styles/";
+
+.ButtonIcon {
+  height: max-content;
+  width: max-content;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  transition: $transition;
+
+  &:before {
+    height: 0;
+    width: 0;
+  }
+
+  & svg {
+    fill: $color-primary;
+    transition: $transition;
+  }
+
+  & path {
+    fill: $color-primary;
+    transition: $transition;
+  }
+
+  &:hover {
+    background-color: transparent;
+    cursor: pointer;
+
+    & svg {
+      fill: $color-primary-hover;
+    }
+
+    & path {
+      fill: $color-primary-hover;
+    }
+  }
+
+  &_disabled {
+    background-color: white;
+
+    svg {
+      fill: $color-disabled;
+    }
+
+    path {
+      fill: $color-disabled;
+    }
+
+    &:hover {
+      background-color: white;
+      cursor: default;
+      & svg {
+        fill: $color-disabled;
+      }
+
+      & path {
+        fill: $color-disabled;
+      }
+    }
+  }
+}

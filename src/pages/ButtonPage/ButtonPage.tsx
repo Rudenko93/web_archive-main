@@ -2,6 +2,7 @@ import React from "react"
 import { ETypographyVariant, Typography } from "../../ui/Typography"
 import "./ButtonPage.scss"
 import { Button } from "../../ui/Button"
+import { ButtonIcon } from "../../ui/ButtonIcon"
 
 export const ButtonPage: React.FC = () => {
   return (
@@ -13,6 +14,14 @@ export const ButtonPage: React.FC = () => {
       <br />
       <br />
       <Button isDisabled>Disabled</Button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <ButtonIcon typeIcon="Button" />
+      <br />
+      <br />
+      <ButtonIcon typeIcon="Button" isDisabled={true} />
     </div>
   )
 }
