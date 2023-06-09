@@ -5,6 +5,7 @@ import { toCapitalize } from "../../../../utils"
 import "./MenuUi.scss"
 
 const navList = [
+  EUiRoutes.Accordion,
   EUiRoutes.Button,
   EUiRoutes.Icon,
   EUiRoutes.Switch,

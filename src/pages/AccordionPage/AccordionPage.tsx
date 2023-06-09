@@ -1,14 +1,12 @@
-import { Icon } from "../../ui/Icon"
 import { ETypographyVariant, Typography } from "../../ui/Typography"
-import "./IconPage.scss"
+import "./AccordionPage.scss"
 
-export const IconPage = () => {
+export const AccordionPage = () => {
   return (
     <div>
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-        Icon
+        Accordion
       </Typography>
-      <Icon type="Svg" width={64} height={64} />
     </div>
   )
 }

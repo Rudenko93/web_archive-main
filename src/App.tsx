@@ -7,6 +7,7 @@ import {
   ButtonPage,
   IconPage,
   SwitcherPage,
+  AccordionPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Home,
             element: <HomeUi />,
+          },
+          {
+            path: EUiRoutes.Accordion,
+            element: <AccordionPage />,
           },
           {
             path: EUiRoutes.Button,

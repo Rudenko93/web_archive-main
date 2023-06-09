@@ -3,8 +3,15 @@ import { ReactComponent as Git } from "../assets/icons/git.svg"
 import { ReactComponent as Svg } from "../assets/icons/svg.svg"
 import { ReactComponent as Button } from "../assets/icons/button.svg"
 import { ReactComponent as ArrowRight } from "../assets/icons/arrow-right.svg"
+import { ReactComponent as ArrowDown } from "../assets/icons/arrow-down.svg"
 
-export type IconType = "Git" | "Telegram" | "Svg" | "Button" | "ArrowRight"
+export type IconType =
+  | "Git"
+  | "Telegram"
+  | "Svg"
+  | "Button"
+  | "ArrowRight"
+  | "ArrowDown"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -12,4 +19,5 @@ export const iconTypes = new Map([
   ["Svg", <Svg />],
   ["Button", <Button />],
   ["ArrowRight", <ArrowRight />],
+  ["ArrowDown", <ArrowDown />],
 ])
