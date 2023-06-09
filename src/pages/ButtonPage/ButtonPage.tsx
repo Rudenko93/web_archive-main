@@ -6,7 +6,7 @@ import { ButtonIcon } from "../../ui/ButtonIcon"
 
 export const ButtonPage: React.FC = () => {
   return (
-    <div>
+    <div className="ButtonPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Button
       </Typography>
@@ -16,12 +16,18 @@ export const ButtonPage: React.FC = () => {
       <Button isDisabled>Disabled</Button>
       <br />
       <br />
+      <Button typeIcon="ArrowRight">Next</Button>
       <br />
       <br />
-      <ButtonIcon typeIcon="Button" />
+      <Button typeIcon="ArrowRight" isDisabled>
+        Next
+      </Button>
       <br />
       <br />
-      <ButtonIcon typeIcon="Button" isDisabled={true} />
+      <ButtonIcon typeIcon="Button" width={64} height={64} />
+      <br />
+      <br />
+      <ButtonIcon typeIcon="Button" width={64} height={64} isDisabled={true} />
     </div>
   )
 }

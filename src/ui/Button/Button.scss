@@ -1,6 +1,9 @@
 @import "../../styles/";
 
 .Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: max-content;
   width: max-content;
   outline: transparent;
@@ -39,5 +42,9 @@
     &:active {
       transform: none;
     }
+  }
+
+  .textWithIcon {
+    margin-left: 10px;
   }
 }

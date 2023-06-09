@@ -8,6 +8,8 @@ interface IButtonIconProps extends DOMAttributes<HTMLButtonElement> {
   onClick?: (event: React.MouseEvent) => void
   className?: string
   typeIcon: IconType
+  width?: number
+  height?: number
 }
 
 export const ButtonIcon: React.FC<IButtonIconProps> = ({
@@ -15,6 +17,8 @@ export const ButtonIcon: React.FC<IButtonIconProps> = ({
   onClick,
   isDisabled,
   className,
+  width,
+  height,
 }) => {
   return (
     <button
@@ -23,7 +27,7 @@ export const ButtonIcon: React.FC<IButtonIconProps> = ({
       className={clsx("ButtonIcon", className, {
         ButtonIcon_disabled: isDisabled,
       })}>
-      <Icon type={typeIcon} />
+      <Icon type={typeIcon} width={width} height={height} />
     </button>
   )
 }

@@ -1,12 +1,14 @@
 import clsx from "clsx"
 import { DOMAttributes } from "react"
 import "./Button.scss"
+import { Icon, IconType } from "../Icon"
 
 interface IButtonProps extends DOMAttributes<HTMLButtonElement> {
   isDisabled?: boolean
   typeButton?: "button" | "submit" | "reset"
   onClick?: (event: React.MouseEvent) => void
   className?: string
+  typeIcon?: IconType
 }
 
 export const Button: React.FC<IButtonProps> = ({
@@ -15,6 +17,7 @@ export const Button: React.FC<IButtonProps> = ({
   className,
   onClick,
   children,
+  typeIcon,
 }) => {
   return (
     <button
@@ -24,7 +27,8 @@ export const Button: React.FC<IButtonProps> = ({
       className={clsx("Button", className, {
         Button_disabled: isDisabled,
       })}>
-      <span>{children}</span>
+      {typeIcon && <Icon type="ArrowRight" />}
+      <span className={clsx({ textWithIcon: typeIcon })}>{children}</span>
     </button>
   )
 }

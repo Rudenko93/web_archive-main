@@ -12,8 +12,8 @@ interface IIconProps extends DOMAttributes<HTMLDivElement> {
 const getIcon = (type: string) => iconTypes.get(type)
 
 export const Icon: FC<IIconProps> = ({
-  width = 64,
-  height = 64,
+  width = 28,
+  height = 28,
   className,
   type,
 }) => {

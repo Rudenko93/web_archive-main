@@ -4,7 +4,6 @@ import { EMainRoutes } from "../../../../enums/routes"
 import { toCapitalize } from "../../../../utils"
 import "./Menu.scss"
 import { Icon } from "../../../../ui/Icon"
-import { Button } from "../../../../ui/Button"
 
 const navList = [
   EMainRoutes.Ui,
