@@ -1,6 +1,10 @@
 .SelectPage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  gap: 20px;
   &-Select {
-    max-width: 220px;
+    max-width: 300px;
     width: 100%;
 
     //svg {
@@ -13,6 +17,9 @@
     //    transform: rotate(180deg);
     //  }
     //}
+  }
+  &-value {
+    display: flex;
   }
 }
 

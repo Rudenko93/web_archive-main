@@ -21,6 +21,8 @@ export const StyledDropdownIndicator = (
             "Select-IconDropdownIndicator__open": menuIsOpen,
           })}
           type="ArrowDown"
+          width={16}
+          height={16}
         />
       </components.DropdownIndicator>
     </div>
@@ -34,7 +36,7 @@ export const StyledMultiValueRemove = (
   return (
     <div className="Select-MultiValueRemove">
       <components.MultiValueRemove {...props}>
-        <Icon type="Close" />
+        <Icon type="Close" width={16} height={16} />
       </components.MultiValueRemove>
     </div>
   )
