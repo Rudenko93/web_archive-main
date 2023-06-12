@@ -8,6 +8,7 @@ const navList = [
   EUiRoutes.Accordion,
   EUiRoutes.Button,
   EUiRoutes.Icon,
+  EUiRoutes.Select,
   EUiRoutes.Switch,
   EUiRoutes.Typography,
 ]

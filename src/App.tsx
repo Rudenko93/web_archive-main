@@ -6,6 +6,7 @@ import {
   HooksPage,
   ButtonPage,
   IconPage,
+  SelectPage,
   SwitcherPage,
   AccordionPage,
 } from "./pages"
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Icon,
             element: <IconPage />,
+          },
+          {
+            path: EUiRoutes.Select,
+            element: <SelectPage />,
           },
           {
             path: EUiRoutes.Switch,

@@ -5,6 +5,7 @@ export enum EUiRoutes {
   Icon = "icon",
   Typography = "typography",
   Switch = "switch",
+  Select = "select",
 }
 
 export enum EMainRoutes {
