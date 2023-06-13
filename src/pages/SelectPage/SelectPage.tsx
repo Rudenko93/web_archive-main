@@ -37,8 +37,8 @@ export const SelectPage: React.FC<TProps> = ({
       </Typography>
 
       <Select
-        className={clsx("SelectPage-Select", {
-          "SelectPage-Select__active": isSelectOpened,
+        className={clsx("SelectPage__Select", {
+          "SelectPage__Select-active": isSelectOpened,
         })}
         isMulti={false}
         onBlur={onBlur}
@@ -54,8 +54,8 @@ export const SelectPage: React.FC<TProps> = ({
       <br />
 
       <Select
-        className={clsx("SelectPage-Select", {
-          "SelectPage-Select__active": isSelectOpened,
+        className={clsx("SelectPage__Select", {
+          "SelectPage__Select-active": isSelectOpened,
         })}
         isMulti={true}
         onBlur={onBlur}
@@ -65,7 +65,7 @@ export const SelectPage: React.FC<TProps> = ({
         theme={theme}
         value={multipleSelectedOption}
       />
-      <div className="SelectPage-value">
+      <div className="SelectPage__value">
         <span>{JSON.stringify(selectedOption, null, 2)}</span>
       </div>
     </section>
