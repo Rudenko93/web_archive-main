@@ -1,4 +1,4 @@
-import type { ETheme } from "../../enums/theme"
+import type { ETheme } from "enums"
 import type { TSelectVariantStyle } from "./types"
 
 const COLOR_PRIMARY = "#b0976a"

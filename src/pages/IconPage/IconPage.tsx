@@ -1,5 +1,4 @@
-import { Icon } from "../../ui/Icon"
-import { ETypographyVariant, Typography } from "../../ui/Typography"
+import { ETypographyVariant, Typography, Icon } from "ui"
 import "./IconPage.scss"
 
 export const IconPage = () => {

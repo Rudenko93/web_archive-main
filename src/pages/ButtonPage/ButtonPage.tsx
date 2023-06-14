@@ -1,8 +1,6 @@
 import React from "react"
-import { ETypographyVariant, Typography } from "../../ui/Typography"
+import { Button, ButtonIcon, Typography, ETypographyVariant } from "ui"
 import "./ButtonPage.scss"
-import { Button } from "../../ui/Button"
-import { ButtonIcon } from "../../ui/ButtonIcon"
 
 export const ButtonPage: React.FC = () => {
   return (

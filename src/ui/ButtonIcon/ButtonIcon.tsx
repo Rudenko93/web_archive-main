@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { DOMAttributes } from "react"
-import { Icon, IconType } from "../Icon"
+import { Icon, IconType } from "ui"
 import "./ButtonIcon.scss"
 
 interface IButtonIconProps extends DOMAttributes<HTMLButtonElement> {

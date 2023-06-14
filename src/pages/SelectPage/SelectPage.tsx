@@ -1,9 +1,9 @@
 import clsx from "clsx"
-import { ETypographyVariant, Typography } from "../../ui/Typography"
-import { ETheme } from "../../enums/theme"
+import { ETypographyVariant, Typography, Select } from "ui"
+import { ETheme } from "enums"
 import { useSelect } from "./hooks"
+
 import "./SelectPage.scss"
-import { Select } from "../../ui/Select"
 
 type TSorting = {
   value: string
@@ -48,7 +48,7 @@ export const SelectPage: React.FC<TProps> = ({
         theme={theme}
         value={selectedOption} // value={options.find(option => option.value === sorting)!}
       />
-      <div className="SelectPage-value">
+      <div className="SelectPage__value">
         <span>{JSON.stringify(selectedOption, null, 2)}</span>
       </div>
       <br />

@@ -1,8 +1,7 @@
 import clsx from "clsx"
-
 import { PropsWithChildren, useState } from "react"
+import { Icon } from "ui"
 import "./Accordion.scss"
-import { Icon } from "../Icon"
 
 interface IAccordionProps extends PropsWithChildren {
   className?: string

@@ -12,7 +12,7 @@ import type {
   StylesConfig,
 } from "react-select"
 import type { SelectComponents } from "react-select/dist/declarations/src/components"
-import type { ETheme } from "../../enums/theme"
+import type { ETheme } from "enums"
 
 export type TSelectOption = {
   value: string

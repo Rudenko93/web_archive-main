@@ -5,7 +5,7 @@ import type {
   MultiValueRemoveProps,
 } from "react-select"
 import clsx from "clsx"
-import { Icon } from "../Icon"
+import { Icon } from "ui"
 import type { TSelectOption } from "./types"
 
 export const StyledDropdownIndicator = (

@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { DOMAttributes } from "react"
+import { Icon, IconType } from "ui"
 import "./Button.scss"
-import { Icon, IconType } from "../Icon"
 
 interface IButtonProps extends DOMAttributes<HTMLButtonElement> {
   isDisabled?: boolean

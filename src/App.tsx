@@ -9,6 +9,7 @@ import {
   SelectPage,
   SwitcherPage,
   AccordionPage,
+  ModalPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Icon,
             element: <IconPage />,
+          },
+          {
+            path: EUiRoutes.Modal,
+            element: <ModalPage />,
           },
           {
             path: EUiRoutes.Select,

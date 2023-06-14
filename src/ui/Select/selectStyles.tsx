@@ -1,5 +1,5 @@
 import type { GroupBase, StylesConfig } from "react-select"
-import { ETheme } from "../../enums/theme"
+import { ETheme } from "enums/"
 import { VARIANTS } from "./selectVariants"
 import type { TSelectMultiType, TSelectOption } from "./types"
 
