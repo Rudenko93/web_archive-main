@@ -3,10 +3,10 @@ import "./SwitcherPage.scss"
 
 export const SwitcherPage = () => {
   return (
-    <div>
+    <section className="SwitcherPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Switch
       </Typography>
-    </div>
+    </section>
   )
 }

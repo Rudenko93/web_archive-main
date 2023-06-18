@@ -3,7 +3,7 @@ import "./AccordionPage.scss"
 
 export const AccordionPage = () => {
   return (
-    <div className="AccordionPage">
+    <section className="AccordionPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Accordion
       </Typography>
@@ -21,6 +21,6 @@ export const AccordionPage = () => {
           excepturi illo enim?
         </span>
       </Accordion>
-    </div>
+    </section>
   )
 }

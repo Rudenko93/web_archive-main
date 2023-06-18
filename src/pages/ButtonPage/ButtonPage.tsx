@@ -4,7 +4,7 @@ import "./ButtonPage.scss"
 
 export const ButtonPage: React.FC = () => {
   return (
-    <div className="ButtonPage">
+    <section className="ButtonPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Button
       </Typography>
@@ -26,6 +26,6 @@ export const ButtonPage: React.FC = () => {
       <br />
       <br />
       <ButtonIcon typeIcon="Button" width={64} height={64} isDisabled={true} />
-    </div>
+    </section>
   )
 }
