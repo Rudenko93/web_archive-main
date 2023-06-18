@@ -2,6 +2,7 @@ export enum EUiRoutes {
   Home = "",
   Accordion = "accordion",
   Button = "button",
+  Checkbox = "checkbox",
   Icon = "icon",
   Modal = "modal",
   Typography = "typography",

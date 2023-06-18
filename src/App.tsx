@@ -10,6 +10,7 @@ import {
   SwitcherPage,
   AccordionPage,
   ModalPage,
+  CheckboxPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Button,
             element: <ButtonPage />,
+          },
+          {
+            path: EUiRoutes.Checkbox,
+            element: <CheckboxPage />,
           },
           {
             path: EUiRoutes.Icon,
