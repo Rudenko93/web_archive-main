@@ -11,6 +11,7 @@ import {
   AccordionPage,
   ModalPage,
   CheckboxPage,
+  ScrollbarPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Modal,
             element: <ModalPage />,
+          },
+          {
+            path: EUiRoutes.Scrollbar,
+            element: <ScrollbarPage />,
           },
           {
             path: EUiRoutes.Select,

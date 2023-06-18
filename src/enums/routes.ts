@@ -7,6 +7,7 @@ export enum EUiRoutes {
   Modal = "modal",
   Typography = "typography",
   Switch = "switch",
+  Scrollbar = "scrollbar",
   Select = "select",
 }
 
