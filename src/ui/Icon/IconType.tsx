@@ -5,6 +5,7 @@ import { ReactComponent as Button } from "../assets/icons/button.svg"
 import { ReactComponent as ArrowRight } from "../assets/icons/arrow-right.svg"
 import { ReactComponent as ArrowDown } from "../assets/icons/arrow-down.svg"
 import { ReactComponent as Close } from "../assets/icons/close.svg"
+import { ReactComponent as Checkbox } from "../assets/icons/checkbox.svg"
 
 export type IconType =
   | "Git"
@@ -14,6 +15,7 @@ export type IconType =
   | "ArrowRight"
   | "ArrowDown"
   | "Close"
+  | "Checkbox"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -23,4 +25,5 @@ export const iconTypes = new Map([
   ["ArrowRight", <ArrowRight />],
   ["ArrowDown", <ArrowDown />],
   ["Close", <Close />],
+  ["Checkbox", <Checkbox />],
 ])
