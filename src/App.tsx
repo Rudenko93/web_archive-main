@@ -13,6 +13,7 @@ import {
   CheckboxPage,
   ScrollbarPage,
   SpinnerPage,
+  DocumentViewerPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Checkbox,
             element: <CheckboxPage />,
+          },
+          {
+            path: EUiRoutes.DocumentViewer,
+            element: <DocumentViewerPage />,
           },
           {
             path: EUiRoutes.Icon,
