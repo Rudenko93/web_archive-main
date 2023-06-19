@@ -12,6 +12,7 @@ import {
   ModalPage,
   CheckboxPage,
   ScrollbarPage,
+  SpinnerPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Select,
             element: <SelectPage />,
+          },
+          {
+            path: EUiRoutes.Spinner,
+            element: <SpinnerPage />,
           },
           {
             path: EUiRoutes.Switch,

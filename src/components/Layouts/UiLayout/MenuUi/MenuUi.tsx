@@ -12,6 +12,7 @@ const navList = [
   EUiRoutes.Modal,
   EUiRoutes.Scrollbar,
   EUiRoutes.Select,
+  EUiRoutes.Spinner,
   EUiRoutes.Switch,
   EUiRoutes.Typography,
 ]

@@ -5,10 +5,11 @@ export enum EUiRoutes {
   Checkbox = "checkbox",
   Icon = "icon",
   Modal = "modal",
-  Typography = "typography",
-  Switch = "switch",
   Scrollbar = "scrollbar",
   Select = "select",
+  Spinner = "spinner",
+  Switch = "switch",
+  Typography = "typography",
 }
 
 export enum EMainRoutes {
