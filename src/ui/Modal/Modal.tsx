@@ -6,7 +6,7 @@ import { Icon } from "ui"
 import "react-responsive-modal/styles.css"
 import "./Modal.scss"
 
-type IModalSize = "medium" | "small"
+type IModalSize = "medium" | "small" | "large"
 
 type TModalProps = {
   children?: ReactNode
@@ -25,6 +25,7 @@ export const Modal = ({
 }: TModalProps): JSX.Element => {
   const defaultClassNames = {
     modal: clsx("ModalDefault", className, {
+      ModalDefault_large: size === "large",
       ModalDefault_medium: size === "medium",
       ModalDefault_small: size === "small",
     }),
