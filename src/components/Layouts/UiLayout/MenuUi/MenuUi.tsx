@@ -11,6 +11,7 @@ const navList = [
   EUiRoutes.DocumentViewer,
   EUiRoutes.Icon,
   EUiRoutes.Modal,
+  EUiRoutes.Overlay,
   EUiRoutes.Scrollbar,
   EUiRoutes.Select,
   EUiRoutes.Spinner,

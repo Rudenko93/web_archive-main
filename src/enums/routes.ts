@@ -6,6 +6,7 @@ export enum EUiRoutes {
   DocumentViewer = "documentViewer",
   Icon = "icon",
   Modal = "modal",
+  Overlay = "overlay",
   Scrollbar = "scrollbar",
   Select = "select",
   Spinner = "spinner",

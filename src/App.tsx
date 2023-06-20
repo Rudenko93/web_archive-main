@@ -14,6 +14,7 @@ import {
   ScrollbarPage,
   SpinnerPage,
   DocumentViewerPage,
+  OverlayPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Modal,
             element: <ModalPage />,
+          },
+          {
+            path: EUiRoutes.Overlay,
+            element: <OverlayPage />,
           },
           {
             path: EUiRoutes.Scrollbar,
