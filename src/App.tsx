@@ -17,6 +17,7 @@ import {
   OverlayPage,
   HamburgerPage,
   SidebarPage,
+  AvatarPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Accordion,
             element: <AccordionPage />,
+          },
+          {
+            path: EUiRoutes.Avatar,
+            element: <AvatarPage />,
           },
           {
             path: EUiRoutes.Button,

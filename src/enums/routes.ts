@@ -1,5 +1,6 @@
 export enum EUiRoutes {
   Home = "",
+  Avatar = "avatar",
   Accordion = "accordion",
   Button = "button",
   Checkbox = "checkbox",
