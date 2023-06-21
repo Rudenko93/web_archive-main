@@ -1,7 +1,7 @@
 import { memo, useRef } from "react"
 import type { FC, MouseEvent } from "react"
 import { CSSTransition } from "react-transition-group"
-import classNames from "classnames"
+import clsx from "clsx"
 
 import "./Overlay.scss"
 
@@ -22,7 +22,7 @@ const Component: FC<TProps> = ({
 
   return (
     <CSSTransition
-      className={classNames("Overlay", className)}
+      className={clsx("Overlay", className)}
       in={isActive}
       nodeRef={nodeRef}
       onClick={onClick}
