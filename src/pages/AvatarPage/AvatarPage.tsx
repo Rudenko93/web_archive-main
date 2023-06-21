@@ -1,7 +1,7 @@
 import React from "react"
 import avatar from "./avatar.jpg"
 import "./AvatarPage.scss"
-import { ETypographyVariant, Typography } from "ui"
+import { Avatar, ETypographyVariant, Typography } from "ui"
 
 export const AvatarPage: React.FC = () => {
   return (
@@ -12,10 +12,12 @@ export const AvatarPage: React.FC = () => {
       <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
         Avatar with image
       </Typography>
+      <Avatar image={avatar} />
       <hr />
       <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
         Avatar with initials
       </Typography>
+      <Avatar title="IT" />
     </section>
   )
 }
