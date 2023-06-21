@@ -15,6 +15,7 @@ import {
   SpinnerPage,
   DocumentViewerPage,
   OverlayPage,
+  HamburgerPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.DocumentViewer,
             element: <DocumentViewerPage />,
+          },
+          {
+            path: EUiRoutes.Hamburger,
+            element: <HamburgerPage />,
           },
           {
             path: EUiRoutes.Icon,

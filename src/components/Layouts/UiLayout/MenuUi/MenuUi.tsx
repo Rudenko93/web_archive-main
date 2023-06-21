@@ -10,6 +10,7 @@ const navList = [
   EUiRoutes.Checkbox,
   EUiRoutes.DocumentViewer,
   EUiRoutes.Icon,
+  EUiRoutes.Hamburger,
   EUiRoutes.Modal,
   EUiRoutes.Overlay,
   EUiRoutes.Scrollbar,

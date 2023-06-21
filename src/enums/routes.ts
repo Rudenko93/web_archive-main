@@ -4,6 +4,7 @@ export enum EUiRoutes {
   Button = "button",
   Checkbox = "checkbox",
   DocumentViewer = "documentViewer",
+  Hamburger = "hamburger",
   Icon = "icon",
   Modal = "modal",
   Overlay = "overlay",
