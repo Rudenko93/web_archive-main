@@ -16,6 +16,7 @@ import {
   DocumentViewerPage,
   OverlayPage,
   HamburgerPage,
+  SidebarPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Select,
             element: <SelectPage />,
+          },
+          {
+            path: EUiRoutes.Sidebar,
+            element: <SidebarPage />,
           },
           {
             path: EUiRoutes.Spinner,
