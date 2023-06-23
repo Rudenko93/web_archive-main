@@ -18,6 +18,7 @@ import {
   HamburgerPage,
   SidebarPage,
   AvatarPage,
+  FormPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.DocumentViewer,
             element: <DocumentViewerPage />,
+          },
+          {
+            path: EUiRoutes.Form,
+            element: <FormPage />,
           },
           {
             path: EUiRoutes.Hamburger,
