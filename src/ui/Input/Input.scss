@@ -15,7 +15,7 @@
     z-index: 1;
     color: $color-lighting;
     pointer-events: none;
-    transition: all $transition;
+    transition: $transition;
 
     #{$this}__inner_error {
       background-color: $color-light-red;

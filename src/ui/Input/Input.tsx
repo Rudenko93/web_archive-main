@@ -47,7 +47,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
       isInputFocused
     )
 
-    const onBlurCallback = (event: FocusEvent<HTMLInputElement>) => {
+    const handleBlur = (event: FocusEvent<HTMLInputElement>) => {
       if (event.target.value !== "") {
         setIsFocused(true)
       } else {
@@ -59,7 +59,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
       }
     }
 
-    const onFocusCallback = (event: FocusEvent<HTMLInputElement>) => {
+    const handleFocus = (event: FocusEvent<HTMLInputElement>) => {
       if (!isFocused) {
         setIsFocused(true)
       }
@@ -89,8 +89,8 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
             type={type}
             ref={ref}
             onChange={onChange}
-            onFocus={onFocusCallback}
-            onBlur={onBlurCallback}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
             {...rest}
           />
         </div>
