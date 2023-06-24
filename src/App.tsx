@@ -19,6 +19,8 @@ import {
   SidebarPage,
   AvatarPage,
   FormPage,
+  TabsPage,
+  RatingPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -78,6 +80,10 @@ const router = createBrowserRouter([
             element: <OverlayPage />,
           },
           {
+            path: EUiRoutes.Rating,
+            element: <RatingPage />,
+          },
+          {
             path: EUiRoutes.Scrollbar,
             element: <ScrollbarPage />,
           },
@@ -96,6 +102,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Switch,
             element: <SwitcherPage />,
+          },
+          {
+            path: EUiRoutes.Tabs,
+            element: <TabsPage />,
           },
           {
             path: EUiRoutes.Typography,

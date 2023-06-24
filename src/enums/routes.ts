@@ -10,11 +10,13 @@ export enum EUiRoutes {
   Icon = "icon",
   Modal = "modal",
   Overlay = "overlay",
+  Rating = "rating",
   Scrollbar = "scrollbar",
   Select = "select",
   Sidebar = "sidebar",
   Spinner = "spinner",
   Switch = "switch",
+  Tabs = "tabs",
   Typography = "typography",
 }
 

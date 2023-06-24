@@ -1,7 +1,7 @@
 import { memo } from "react"
-import { EUiRoutes } from "../../../../enums/routes"
+import { EUiRoutes } from "enums/routes"
 import { NavLink } from "react-router-dom"
-import { toCapitalize } from "../../../../utils"
+import { toCapitalize } from "utils"
 import "./MenuUi.scss"
 
 const navList = [
