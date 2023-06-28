@@ -18,6 +18,7 @@ const navList = [
   EUiRoutes.Scrollbar,
   EUiRoutes.Select,
   EUiRoutes.Sidebar,
+  EUiRoutes.Skeleton,
   EUiRoutes.Spinner,
   EUiRoutes.Switch,
   EUiRoutes.Typography,

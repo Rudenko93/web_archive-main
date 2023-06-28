@@ -21,6 +21,7 @@ import {
   FormPage,
   TabsPage,
   RatingPage,
+  SkeletonPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Sidebar,
             element: <SidebarPage />,
+          },
+          {
+            path: EUiRoutes.Skeleton,
+            element: <SkeletonPage />,
           },
           {
             path: EUiRoutes.Spinner,
