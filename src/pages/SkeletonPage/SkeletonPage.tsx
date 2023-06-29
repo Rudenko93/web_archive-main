@@ -1,4 +1,4 @@
-import { ETypographyVariant, Typography } from "ui"
+import { ETypographyVariant, Skeleton, Typography } from "ui"
 import "./SkeletonPage.scss"
 
 export const SkeletonPage = () => {
@@ -7,6 +7,7 @@ export const SkeletonPage = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Overlay
       </Typography>
+      <Skeleton />
     </section>
   )
 }
