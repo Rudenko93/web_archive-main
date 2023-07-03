@@ -10,6 +10,7 @@ type TextOwnProps<E extends ElementType = ElementType> = {
   as: E
   color?: Color
   variant?: ETypographyVariant
+  position?: "start" | "end" | "center"
 }
 
 type TextProps<E extends ElementType> = TextOwnProps<E> &
@@ -21,6 +22,7 @@ export const Typography = memo(
     as,
     color = ETextColor.Dark,
     variant = ETypographyVariant.TextH1Bold,
+    position = "center",
     ...otherProps
   }: TextProps<E>) => {
     const currentTheme = TYPOGRAPHY_THEMES({ color })[variant]

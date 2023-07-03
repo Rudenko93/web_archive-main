@@ -4,6 +4,12 @@ $base-font-family: "Roboto", sans-serif;
   font-family: $base-font-family;
   font-style: normal;
   line-height: 1.25;
+  &-start {
+    align-self: flex-start;
+  }
+  &-end {
+    align-self: flex-end;
+  }
 
   &-h1 {
     font-size: 32px;

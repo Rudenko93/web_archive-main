@@ -7,6 +7,15 @@ export const TypographyPage = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Typography
       </Typography>
+      <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
+        Text
+      </Typography>
+      <Typography as="h5" variant={ETypographyVariant.TextH5Bold}>
+        Text
+      </Typography>
+      <Typography as="h5" variant={ETypographyVariant.TextH5Bold}>
+        Text
+      </Typography>
     </section>
   )
 }

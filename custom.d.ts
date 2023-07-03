@@ -31,7 +31,6 @@ declare module "react-rating-stars-component" {
     isEdit?: boolean
   }
 
-  onChange(new_rating)
   function ReactStars(parameters: TProps): JSX.Element
   export = ReactStars
 }
