@@ -3,7 +3,7 @@ import { ETypographyVariant, Skeleton, Typography } from "ui"
 import "./SkeletonPage.scss"
 
 export const SkeletonPage = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [isLoading] = useState<boolean>(true)
   return (
     <section className="SkeletonPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>

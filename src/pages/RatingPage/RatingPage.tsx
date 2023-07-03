@@ -13,7 +13,7 @@ export const RatingPage: FC = () => {
   return (
     <section className="RatingPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-        Overlay
+        Rating
       </Typography>
       <Rating
         activeColor="#ffd700"
@@ -21,9 +21,10 @@ export const RatingPage: FC = () => {
         size={45}
         onChange={handleRatingChange}
       />
-      <div>
-        <pre>{JSON.stringify(rating, null, 2)}</pre>
-      </div>
+
+      <pre style={{ alignSelf: "flex-start" }}>
+        {JSON.stringify(rating, null, 2)}
+      </pre>
     </section>
   )
 }

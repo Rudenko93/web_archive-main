@@ -1,19 +1,11 @@
 import type { FC } from "react"
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form"
+import { FormProvider, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Input, PhoneInputMask } from "services/form"
 import { Button, ETypographyVariant, Typography } from "ui"
 import { EFormFields } from "enums"
 import { formSchema } from "./schemas"
 import "./FormPage.scss"
-
-type FieldValues = {
-  email: "string"
-  name: "string"
-  password: "string"
-  phone: "string"
-  rePassword: "string"
-}
 
 export const FormPage: FC = () => {
   const resolver = zodResolver(formSchema)
