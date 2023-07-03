@@ -1,6 +1,6 @@
 import { memo } from "react"
 import type { FC } from "react"
-import ReactStars from "react-rating-stars-component"
+import StarRatingComponent from "react-rating-star-with-type"
 
 type TProps = {
   activeColor?: string
@@ -11,7 +11,7 @@ type TProps = {
 
 const Component: FC<TProps> = ({ activeColor, count, onChange, size }) => {
   return (
-    <ReactStars
+    <StarRatingComponent
       activeColor={activeColor}
       count={count}
       onChange={onChange}
