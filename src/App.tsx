@@ -22,6 +22,7 @@ import {
   TabsPage,
   RatingPage,
   SkeletonPage,
+  DropDownPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.DocumentViewer,
             element: <DocumentViewerPage />,
+          },
+          {
+            path: EUiRoutes.DropDown,
+            element: <DropDownPage />,
           },
           {
             path: EUiRoutes.Form,

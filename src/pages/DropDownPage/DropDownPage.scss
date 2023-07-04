@@ -1,17 +1,17 @@
 @import "styles";
 
 .DropDownPage {
-  &-Navigation {
+  &__Navigation {
     width: 100%;
   }
 
-  &-Menu {
+  &__Menu {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
 
-  &-MenuItem {
+  &__MenuItem {
     position: relative;
     padding: 0 50px;
     border-bottom: 1px solid $color-light-gray;
@@ -63,11 +63,11 @@ $transition: 0.15s;
     transition: opacity $transition;
   }
 
-  &-Menu {
+  &__Menu {
     padding: 4px;
   }
 
-  &-MenuItem {
+  &__MenuItem {
     display: flex;
     align-items: center;
     margin: 3px;
