@@ -4,10 +4,10 @@ $base-font-family: "Roboto", sans-serif;
   font-family: $base-font-family;
   font-style: normal;
   line-height: 1.25;
-  &-start {
+  &_start {
     align-self: flex-start;
   }
-  &-end {
+  &_end {
     align-self: flex-end;
   }
 

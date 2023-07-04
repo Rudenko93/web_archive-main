@@ -26,7 +26,15 @@ export const DocumentViewerPage: React.FC = () => {
         Document viewer
       </Typography>
 
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
+        Document viewer with modal window
+      </Typography>
+
       <Button onClick={handleModalOpen}>Open Modal Window</Button>
+
       <Modal
         className="DocumentViewerPage__modal"
         isOpen={isOpenModal}
@@ -35,7 +43,10 @@ export const DocumentViewerPage: React.FC = () => {
         <DocumentViewer template={template} />
       </Modal>
       <br />
-      <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
         Document viewer with standard "iframe" tag
       </Typography>
       <iframe srcDoc={template} width="200px" height="200px"></iframe>

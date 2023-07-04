@@ -9,12 +9,18 @@ export const AvatarPage: React.FC = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Avatar
       </Typography>
-      <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
         Avatar with image
       </Typography>
       <Avatar image={avatar} />
       <hr />
-      <Typography as="h2" variant={ETypographyVariant.TextH2Medium}>
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
         Avatar with initials
       </Typography>
       <Avatar title="IT" />

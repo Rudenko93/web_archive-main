@@ -17,13 +17,12 @@ export const FormPage: FC = () => {
 
   return (
     <section className="FormPage">
+      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+        Form
+      </Typography>
       <div className="FormPage-Inner">
         <div className="FormPage-Content">
-          <h2 className="FormPage-Title">
-            <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-              Form
-            </Typography>
-          </h2>
+          <h2 className="FormPage-Title">Form</h2>
           <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit(onSubmit)}>
               <div className="FormPage-FormFieldGroup">
