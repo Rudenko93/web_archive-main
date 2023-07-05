@@ -24,6 +24,7 @@ import {
   SkeletonPage,
   DropDownPage,
   TooltipPage,
+  CopyPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Checkbox,
             element: <CheckboxPage />,
+          },
+          {
+            path: EUiRoutes.Copy,
+            element: <CopyPage />,
           },
           {
             path: EUiRoutes.DocumentViewer,

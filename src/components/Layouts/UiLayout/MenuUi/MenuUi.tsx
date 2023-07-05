@@ -9,6 +9,7 @@ const navList = [
   EUiRoutes.Avatar,
   EUiRoutes.Button,
   EUiRoutes.Checkbox,
+  EUiRoutes.Copy,
   EUiRoutes.DocumentViewer,
   EUiRoutes.DropDown,
   EUiRoutes.Form,

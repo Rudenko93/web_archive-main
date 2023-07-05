@@ -4,6 +4,7 @@ export enum EUiRoutes {
   Accordion = "accordion",
   Button = "button",
   Checkbox = "checkbox",
+  Copy = "copy",
   DocumentViewer = "documentViewer",
   DropDown = "dropDown",
   Form = "form",
