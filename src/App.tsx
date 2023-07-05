@@ -23,6 +23,7 @@ import {
   RatingPage,
   SkeletonPage,
   DropDownPage,
+  TooltipPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -116,6 +117,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Tabs,
             element: <TabsPage />,
+          },
+          {
+            path: EUiRoutes.Tooltip,
+            element: <TooltipPage />,
           },
           {
             path: EUiRoutes.Typography,

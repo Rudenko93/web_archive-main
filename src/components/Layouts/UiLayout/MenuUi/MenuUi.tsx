@@ -24,6 +24,7 @@ const navList = [
   EUiRoutes.Spinner,
   EUiRoutes.Switch,
   EUiRoutes.Tabs,
+  EUiRoutes.Tooltip,
   EUiRoutes.Typography,
 ]
 

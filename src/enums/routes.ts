@@ -19,6 +19,7 @@ export enum EUiRoutes {
   Spinner = "spinner",
   Switch = "switch",
   Tabs = "tabs",
+  Tooltip = "tooltip",
   Typography = "typography",
 }
 
