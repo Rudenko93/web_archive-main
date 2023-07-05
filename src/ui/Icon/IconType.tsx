@@ -10,6 +10,7 @@ import { ReactComponent as Spinner } from "../assets/icons/spinner.svg"
 import { ReactComponent as Center } from "../assets/icons/center.svg"
 import { ReactComponent as Plus } from "../assets/icons/plus.svg"
 import { ReactComponent as Minus } from "../assets/icons/minus.svg"
+import { ReactComponent as Copy } from "../assets/icons/copy.svg"
 
 export type IconType =
   | "Git"
@@ -24,6 +25,7 @@ export type IconType =
   | "Center"
   | "Minus"
   | "Plus"
+  | "Copy"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -38,4 +40,5 @@ export const iconTypes = new Map([
   ["Center", <Center />],
   ["Minus", <Minus />],
   ["Plus", <Plus />],
+  ["Copy", <Copy />],
 ])

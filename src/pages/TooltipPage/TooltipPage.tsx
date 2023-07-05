@@ -4,7 +4,7 @@ import "./TooltipPage.scss"
 
 export const TooltipPage: FC = () => {
   const render = () => {
-    return <Icon type="Svg" width={64} height={64} />
+    return <Icon type="Copy" width={64} height={64} />
   }
 
   return (
