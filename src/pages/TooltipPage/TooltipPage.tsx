@@ -25,14 +25,14 @@ export const TooltipPage: FC = () => {
       </Tooltip>
 
       <Tooltip
-        trigger="trigger"
+        trigger="Hover"
         place="right"
         id="right"
         classes={{ container: "tooltip__container" }}>
         <h3>Right</h3>
       </Tooltip>
 
-      <Tooltip trigger="trigger" place="bottom" id="top">
+      <Tooltip trigger="Click" place="bottom" id="top" openOnClick={true}>
         <h3>Bottom</h3>
       </Tooltip>
     </section>

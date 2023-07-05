@@ -35,8 +35,11 @@ type TProps = {
   trigger: JSX.Element | string
   children: ChildrenType
   clickable?: boolean
+  openOnClick?: boolean
   place?: TPlace
   offset?: number
+  delayShow?: number
+  delayHide?: number
 }
 
 export const Tooltip: React.FC<TProps> = ({
@@ -45,8 +48,11 @@ export const Tooltip: React.FC<TProps> = ({
   trigger,
   children,
   clickable = false,
+  openOnClick = false,
   place = "bottom",
   offset = 10,
+  delayShow = 0,
+  delayHide = 0,
 }) => {
   return (
     <div className={clsx("tooltip", classes?.container)}>
@@ -58,6 +64,9 @@ export const Tooltip: React.FC<TProps> = ({
         id={id}
         className={classes?.content}
         clickable={clickable}
+        openOnClick={openOnClick}
+        delayShow={delayShow}
+        delayHide={delayHide}
         place={place}
         offset={offset}>
         {children}
