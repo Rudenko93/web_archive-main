@@ -1,10 +1,3 @@
-import React, {
-  AnchorHTMLAttributes,
-  CSSProperties,
-  DetailedHTMLProps,
-  PropsWithChildren,
-} from "react"
-import { ElementType, ReactNode } from "react"
 import { Tooltip as ReactTooltip, ChildrenType } from "react-tooltip"
 import "./Tooltip.scss"
 import clsx from "clsx"
