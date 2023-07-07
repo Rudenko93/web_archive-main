@@ -53,7 +53,7 @@ const Component: FC<TProps> = ({
     }
   }
 
-  const handleClick = (event: any) => {
+  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
     if (behavior === ETooltipCustomBehavior.CLICK) {
       if (!isClicked) {

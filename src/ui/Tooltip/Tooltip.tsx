@@ -33,6 +33,7 @@ type TProps = {
   offset?: number
   delayShow?: number
   delayHide?: number
+  // controlled?: boolean
 }
 
 export const Tooltip: React.FC<TProps> = ({
@@ -46,12 +47,29 @@ export const Tooltip: React.FC<TProps> = ({
   offset = 10,
   delayShow = 0,
   delayHide = 0,
+  // controlled = true,
 }) => {
+  // const [isOpen, setIsOpen] = useState(false)
+  // isOpen={isOpen}
+  // setIsOpen={setIsOpen}
+  // afterShow=()=>setIsOpen(false)
+
+  // const handleMouseEvent = () => {
+  //   if (controlled) {
+  //     return () => setIsOpen((prev) => !prev)
+  //   }
+  // }
+
   return (
     <div className={clsx("tooltip", classes?.container)}>
-      <a data-tooltip-id={id} className={classes?.trigger}>
+      <div
+        data-tooltip-id={id}
+        className={classes?.trigger}
+        // onMouseEnter={handleMouseEvent()}
+        // onMouseLeave={handleMouseEvent()}
+      >
         {trigger}
-      </a>
+      </div>
 
       <ReactTooltip
         id={id}
@@ -61,7 +79,9 @@ export const Tooltip: React.FC<TProps> = ({
         delayShow={delayShow}
         delayHide={delayHide}
         place={place}
-        offset={offset}>
+        offset={offset}
+        // isOpen={isOpen}
+      >
         {children}
       </ReactTooltip>
     </div>
