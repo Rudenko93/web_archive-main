@@ -17,6 +17,7 @@ const navList = [
   EUiRoutes.Hamburger,
   EUiRoutes.Modal,
   EUiRoutes.Overlay,
+  EUiRoutes.Portal,
   EUiRoutes.Rating,
   EUiRoutes.Scrollbar,
   EUiRoutes.Select,

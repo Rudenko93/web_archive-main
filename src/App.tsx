@@ -25,6 +25,7 @@ import {
   DropDownPage,
   TooltipPage,
   CopyPage,
+  PortalPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -90,6 +91,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Overlay,
             element: <OverlayPage />,
+          },
+          {
+            path: EUiRoutes.Portal,
+            element: <PortalPage />,
           },
           {
             path: EUiRoutes.Rating,

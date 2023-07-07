@@ -11,6 +11,7 @@ export enum EUiRoutes {
   Hamburger = "hamburger",
   Icon = "icon",
   Modal = "modal",
+  Portal = "portal",
   Overlay = "overlay",
   Rating = "rating",
   Skeleton = "skeleton",
