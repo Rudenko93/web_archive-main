@@ -30,6 +30,8 @@ import {
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
 import "./App.scss"
+import { useTheme } from "hooks"
+import { ThemeProvider } from "services/context"
 
 const router = createBrowserRouter([
   {
@@ -147,6 +149,7 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  const themeState = useTheme()
   return (
     <ThemeProvider value={themeState}>
       <div className="App">

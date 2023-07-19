@@ -16,12 +16,11 @@ export const Menu = () => {
   return (
     <div className="menu">
       <div className="menu-left">
-        <input type="text" placeholder="Search ..." />
+        <input type="text" placeholder="Search" />
         <NavLink to={"/"} key={"/"} className={"logo"}>
-          Ui master
+          Ui
         </NavLink>
         <ThemeSwitcherCustom />
-        <span>Rus/eng</span>
       </div>
       <div className="menu-list">
         {navList.map((link) => (
