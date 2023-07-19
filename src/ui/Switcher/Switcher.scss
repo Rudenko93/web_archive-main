@@ -1,4 +1,4 @@
-@import "../../../styles/index";
+@import "styles";
 
 .Switcher {
   $this: &;
@@ -15,7 +15,7 @@
     background-color: $color-white;
     border-radius: 9999px;
     box-shadow: 0 1px 16px rgba(4, 6, 28, 0.1);
-    transition: transform $transition linear;
+    transition: transform 0.3s linear;
     z-index: 0;
     transform: translateX(100%);
 
@@ -30,8 +30,16 @@
     background-color: $color-darkness;
 
     &-Pointer {
-      background: linear-gradient(40deg, rgba(138, 143, 160, 0.16), rgba(31, 32, 41, 0.24) 40%),
-      linear-gradient(210deg, rgba(138, 143, 160, 0.5), rgba(31, 32, 41, 0.24) 40%);
+      background: linear-gradient(
+          40deg,
+          rgba(138, 143, 160, 0.16),
+          rgba(31, 32, 41, 0.24) 40%
+        ),
+        linear-gradient(
+          210deg,
+          rgba(138, 143, 160, 0.5),
+          rgba(31, 32, 41, 0.24) 40%
+        );
     }
   }
 }

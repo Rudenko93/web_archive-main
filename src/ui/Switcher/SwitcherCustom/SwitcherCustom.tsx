@@ -1,16 +1,16 @@
-import { memo } from "react";
-import type { FC, ReactNode } from "react";
-import clsx from "clsx";
-import { SWITCHER_THEMES } from "../constants";
-import { ESwitcherVariant } from "../enums";
+import { memo } from "react"
+import type { FC, ReactNode } from "react"
+import clsx from "clsx"
+import { SWITCHER_THEMES } from "../constants"
+import { ESwitcherVariant } from "../enums"
 
 type TProps = {
-  children?: ReactNode;
-  className?: string;
-  dataTestId?: string;
-  isChecked?: boolean;
-  variant?: ESwitcherVariant;
-};
+  children?: ReactNode
+  className?: string
+  dataTestId?: string
+  isChecked?: boolean
+  variant?: ESwitcherVariant
+}
 
 const SwitcherCustomComponent: FC<TProps> = ({
   children,
@@ -19,7 +19,7 @@ const SwitcherCustomComponent: FC<TProps> = ({
   isChecked,
   variant = ESwitcherVariant.Default,
 }) => {
-  const currentTheme = SWITCHER_THEMES()[variant];
+  const currentTheme = SWITCHER_THEMES()[variant]
 
   return (
     <button className={clsx(currentTheme, className)} data-testid={dataTestId}>
@@ -30,7 +30,7 @@ const SwitcherCustomComponent: FC<TProps> = ({
       />
       {children}
     </button>
-  );
-};
+  )
+}
 
-export const SwitcherCustom = memo(SwitcherCustomComponent);
+export const SwitcherCustom = memo(SwitcherCustomComponent)

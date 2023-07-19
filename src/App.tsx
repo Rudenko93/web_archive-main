@@ -148,9 +148,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <ThemeProvider value={themeState}>
+      <div className="App">
+        <RouterProvider router={router} />
+      </div>
+    </ThemeProvider>
   )
 }
 

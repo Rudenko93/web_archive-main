@@ -4,7 +4,7 @@ import clsx from "clsx"
 import "./Icon.scss"
 interface IIconProps extends DOMAttributes<HTMLDivElement> {
   className?: string
-  width?: number
+  width?: number | string
   height?: number
   type: IconType
   onClick?: () => void

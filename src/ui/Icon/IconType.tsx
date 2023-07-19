@@ -11,6 +11,8 @@ import { ReactComponent as Center } from "../assets/icons/center.svg"
 import { ReactComponent as Plus } from "../assets/icons/plus.svg"
 import { ReactComponent as Minus } from "../assets/icons/minus.svg"
 import { ReactComponent as Copy } from "../assets/icons/copy.svg"
+import { ReactComponent as Light } from "../assets/icons/light.svg"
+import { ReactComponent as Dark } from "../assets/icons/dark.svg"
 
 export type IconType =
   | "Git"
@@ -26,6 +28,8 @@ export type IconType =
   | "Minus"
   | "Plus"
   | "Copy"
+  | "Light"
+  | "Dark"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -41,4 +45,6 @@ export const iconTypes = new Map([
   ["Minus", <Minus />],
   ["Plus", <Plus />],
   ["Copy", <Copy />],
+  ["Light", <Light />],
+  ["Dark", <Dark />],
 ])

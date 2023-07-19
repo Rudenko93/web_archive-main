@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom"
-import { SwitcherCustom } from "../../../../ui/SwitcherCustom/SwitcherCustom"
-import { EMainRoutes } from "../../../../enums/routes"
-import { toCapitalize } from "../../../../utils"
+import { ThemeSwitcherCustom } from "components"
+import { EMainRoutes } from "enums/"
+import { toCapitalize } from "utils"
 import "./Menu.scss"
-import { Icon } from "../../../../ui/Icon"
+import { Icon } from "ui"
 
 const navList = [
   EMainRoutes.Ui,
@@ -20,7 +20,7 @@ export const Menu = () => {
         <NavLink to={"/"} key={"/"} className={"logo"}>
           Ui master
         </NavLink>
-        <SwitcherCustom />
+        <ThemeSwitcherCustom />
         <span>Rus/eng</span>
       </div>
       <div className="menu-list">
