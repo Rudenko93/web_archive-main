@@ -1,4 +1,5 @@
 import { ETypographyVariant, Typography } from "ui"
+
 import "./SwitcherPage.scss"
 
 export const SwitcherPage = () => {

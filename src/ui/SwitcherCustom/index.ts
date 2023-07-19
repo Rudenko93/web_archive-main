@@ -1,1 +1,0 @@
-export { SwitcherCustom } from "./SwitcherCustom"
