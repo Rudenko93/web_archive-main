@@ -1,2 +1,7 @@
 export { Select } from "./Select"
-export type { TSelectMultiType, TSelectOption } from "./types"
+export { AsyncSelect } from "./AsyncSelect"
+export type {
+  TSelectMultiType,
+  TSelectOption,
+  TAsyncSelectProps,
+} from "./types"

@@ -12,7 +12,7 @@ import type {
   StylesConfig,
 } from "react-select"
 import type { SelectComponents } from "react-select/dist/declarations/src/components"
-import type { ETheme } from "enums"
+import type { ETheme } from "../../enums"
 
 export type TSelectOption = {
   value: string
@@ -27,10 +27,12 @@ type TBaseSelectProps = {
   components?: Partial<
     SelectComponents<TSelectOption, TSelectMultiType, GroupBase<TSelectOption>>
   >
+  dataTestId?: string
   defaultValue?: TSelectOption | TSelectOption[]
   getOptionLabel?: GetOptionLabel<TSelectOption | TSelectOption[]>
   id?: string
   instanceId?: string
+  isDisabled?: boolean
   isMulti?: TSelectMultiType
   isSearchable?: boolean
   menuPlacement?: MenuPlacement
@@ -42,6 +44,7 @@ type TBaseSelectProps = {
     action: ActionMeta<TSelectOption>
   ) => void
   onFocus?: FocusEventHandler
+  placeholder?: string
   styles?:
     | StylesConfig<TSelectOption, TSelectMultiType, GroupBase<TSelectOption>>
     | undefined
