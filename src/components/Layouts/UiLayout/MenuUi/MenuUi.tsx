@@ -6,6 +6,7 @@ import "./MenuUi.scss"
 
 const navList = [
   EUiRoutes.Accordion,
+  EUiRoutes.Autocomplete,
   EUiRoutes.Avatar,
   EUiRoutes.Button,
   EUiRoutes.Checkbox,

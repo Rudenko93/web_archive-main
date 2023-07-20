@@ -26,6 +26,7 @@ import {
   TooltipPage,
   CopyPage,
   PortalPage,
+  AutocompletePage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Accordion,
             element: <AccordionPage />,
+          },
+          {
+            path: EUiRoutes.Autocomplete,
+            element: <AutocompletePage />,
+          },
+          {
+            path: EUiRoutes.Typography,
+            element: <TypographyPage />,
           },
           {
             path: EUiRoutes.Avatar,

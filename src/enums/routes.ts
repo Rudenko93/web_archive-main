@@ -2,6 +2,7 @@ export enum EUiRoutes {
   Home = "",
   Avatar = "avatar",
   Accordion = "accordion",
+  Autocomplete = "autocomplete",
   Button = "button",
   Checkbox = "checkbox",
   Copy = "copy",

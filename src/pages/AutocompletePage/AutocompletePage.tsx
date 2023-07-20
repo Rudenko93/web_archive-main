@@ -1,4 +1,3 @@
-import React from "react"
 import type { FC } from "react"
 import clsx from "clsx"
 import isNil from "lodash/isNil"
@@ -20,11 +19,31 @@ export const AutocompletePage: FC = () => {
   } = usePosts()
 
   return (
-    <section>
+    <section className="AutocompletePage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Autocomplete
       </Typography>
-      ET
+      <Typography
+        align="start"
+        as="span"
+        variant={ETypographyVariant.TextB4Regular}>
+        Please enter numbers from 1 to 10
+      </Typography>
+      <Autocomplete
+        className={clsx("AutocompletePage-Select", {
+          "AutocompletePage-Select__active": isSelectOpened,
+        })}
+        isMulti={false}
+        loadOptions={onLoadOptions}
+        onBlur={onBlur}
+        onChange={onChange}
+        onFocus={onFocus}
+        theme={theme}
+        value={selectedOption}
+      />
+      <div className="AutocompletePage__value">
+        <span>{JSON.stringify(selectedOption, null, 2)}</span>
+      </div>
     </section>
   )
 }
