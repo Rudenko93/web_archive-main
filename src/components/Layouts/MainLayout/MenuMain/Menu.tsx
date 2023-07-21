@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { ThemeSwitcherCustom } from "components"
-import { EMainRoutes } from "enums/"
+import { EMainRoutes } from "enums"
 import { toCapitalize } from "utils"
 import "./Menu.scss"
 import { Icon } from "ui"

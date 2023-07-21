@@ -1,4 +1,4 @@
-import { ETypographyVariant, Typography } from "../../ui/Typography"
+import { ETypographyVariant, Typography } from "ui"
 
 export const HomeUi = () => {
   return (
