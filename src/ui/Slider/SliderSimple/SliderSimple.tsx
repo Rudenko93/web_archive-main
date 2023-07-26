@@ -1,21 +1,28 @@
-import clsx from "clsx";
-import isNil from "lodash/isNil";
-import { memo } from "react";
-import type { FC } from "react";
-import Slider from "react-slick";
-import { useMediaQuery } from "react-responsive";
-import { SLIDER_SIMPLE_SETTINGS } from "uikit";
-import type { TSliderSimpleProps } from "uikit";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./SliderSimple.scss";
-import "../Slider.scss";
+import clsx from "clsx"
+import isNil from "lodash/isNil"
+import { memo } from "react"
+import type { FC } from "react"
+import Slider from "react-slick"
+import { useMediaQuery } from "react-responsive"
+
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "./SliderSimple.scss"
+import "../Slider.scss"
+import { SLIDER_SIMPLE_SETTINGS } from "./settings"
+import { TSliderSimpleProps } from "./types"
 
 const SliderSimpleComponent: FC<TSliderSimpleProps> = (props) => {
-  const { alt = "", dataTestId = "uikit__slider-simple", height, images, width } = props;
+  const {
+    alt = "",
+    dataTestId = "uikit__slider-simple",
+    height,
+    images,
+    width,
+  } = props
 
-  const settings = SLIDER_SIMPLE_SETTINGS(props).settings;
-  const isMobileScreen = useMediaQuery({ query: "(max-width: 100px)" });
+  const settings = SLIDER_SIMPLE_SETTINGS(props).settings
+  const isMobileScreen = useMediaQuery({ query: "(max-width: 100px)" })
 
   return (
     <Slider {...settings} data-testid={dataTestId}>
@@ -33,10 +40,10 @@ const SliderSimpleComponent: FC<TSliderSimpleProps> = (props) => {
                 width={width}
               />
             </div>
-          );
+          )
         })}
     </Slider>
-  );
-};
+  )
+}
 
-export const SliderSimple = memo(SliderSimpleComponent);
+export const SliderSimple = memo(SliderSimpleComponent)

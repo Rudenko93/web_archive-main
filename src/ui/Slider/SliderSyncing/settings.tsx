@@ -1,5 +1,5 @@
-import { ESliderArrow, SliderArrow } from "uikit";
-import type { TSliderSyncingProps } from "uikit";
+import { ESliderArrow, SliderArrow } from "../SliderArrow"
+import { TSliderSyncingProps } from "./types"
 
 export const SLIDER_SYNCING_SETTINGS = (props: TSliderSyncingProps) => {
   const {
@@ -15,7 +15,7 @@ export const SLIDER_SYNCING_SETTINGS = (props: TSliderSyncingProps) => {
     slidesToShow = 1,
     swipeToSlide = false,
     speed = 500,
-  } = props;
+  } = props
 
   const settings = {
     dots,
@@ -23,7 +23,7 @@ export const SLIDER_SYNCING_SETTINGS = (props: TSliderSyncingProps) => {
     slidesToScroll,
     speed,
     swipeToSlide,
-  };
+  }
 
   return {
     settingsForModal: {
@@ -75,5 +75,5 @@ export const SLIDER_SYNCING_SETTINGS = (props: TSliderSyncingProps) => {
         },
       ],
     },
-  };
-};
+  }
+}
