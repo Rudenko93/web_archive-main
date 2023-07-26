@@ -15,6 +15,7 @@ export enum EUiRoutes {
   Portal = "portal",
   Overlay = "overlay",
   Rating = "rating",
+  Slider = "slider",
   Skeleton = "skeleton",
   Scrollbar = "scrollbar",
   Select = "select",

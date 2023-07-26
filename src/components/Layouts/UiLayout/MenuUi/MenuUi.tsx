@@ -24,6 +24,7 @@ const navList = [
   EUiRoutes.Select,
   EUiRoutes.Sidebar,
   EUiRoutes.Skeleton,
+  EUiRoutes.Slider,
   EUiRoutes.Spinner,
   EUiRoutes.Switch,
   EUiRoutes.Tabs,
