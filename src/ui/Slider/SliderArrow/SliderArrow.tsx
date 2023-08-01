@@ -54,6 +54,8 @@ export const SliderArrow: FC<TProps> = ({
         })}>
         <Icon
           className="Slider-ArrowCustom"
+          width={40}
+          height={40}
           type={type === ESliderArrow.Previous ? "ArrowL" : "ArrowR"}
         />
       </div>
