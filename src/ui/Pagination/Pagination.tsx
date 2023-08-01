@@ -2,8 +2,8 @@ import type { FC } from "react"
 import ReactPaginate from "react-paginate"
 import clsx from "clsx"
 import { Icon } from "ui"
-import "./Pagination.scss"
 import { ETheme } from "enums"
+import "./Pagination.scss"
 
 type TProps = {
   className?: string

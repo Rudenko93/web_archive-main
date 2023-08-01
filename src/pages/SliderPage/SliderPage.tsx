@@ -9,6 +9,13 @@ export const SliderPage = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Slider
       </Typography>
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
+        Custom slider
+      </Typography>
+
       <SliderSimple
         arrows={true}
         dots={true}
@@ -16,6 +23,12 @@ export const SliderPage = () => {
         images={sliderImages}
         infinite={true}
       />
+      <Typography
+        as="h2"
+        variant={ETypographyVariant.TextH2Medium}
+        align="start">
+        Slick Slider Syncing
+      </Typography>
 
       <SliderSyncing
         arrowsModal={true}

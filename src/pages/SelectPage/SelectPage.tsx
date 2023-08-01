@@ -65,9 +65,6 @@ export const SelectPage: React.FC<TProps> = ({
         theme={theme}
         value={multipleSelectedOption}
       />
-      <div className="SelectPage__value">
-        <span>{JSON.stringify(selectedOption, null, 2)}</span>
-      </div>
     </section>
   )
 }

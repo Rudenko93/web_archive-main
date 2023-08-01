@@ -6,7 +6,7 @@ export const PortalPage: FC = () => {
   return (
     <section className="PortalPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-        Rating
+        Portal
       </Typography>
       <Portal
         className="MyPortal"

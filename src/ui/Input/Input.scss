@@ -8,7 +8,7 @@
   width: 100%;
   word-wrap: break-word;
 
-  &__label {
+  &-Label {
     position: absolute;
     top: 20px;
     left: 12px;
@@ -17,16 +17,16 @@
     pointer-events: none;
     transition: $transition;
 
-    #{$this}__inner_error {
+    #{$this}-Inner__error {
       background-color: $color-light-red;
     }
 
-    &-required {
+    &Required {
       color: $color-red;
     }
   }
 
-  &__visibility {
+  &-Visibility {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -43,22 +43,22 @@
     }
   }
 
-  &__inner {
+  &-Inner {
     width: 100%;
     border: 1px solid transparent;
     border-radius: $border-radius;
   }
 
-  &_active {
+  &__active {
     width: 100%;
 
-    #{$this}__label {
+    #{$this}-Label {
       top: 0;
       padding: 0;
       color: $color-lighting;
     }
 
-    #{$this}__inner_active {
+    #{$this}-Inner__active {
       background-color: transparent;
       border: 1px solid rgba(0, 0, 0, 0.54);
       color: $color-text;
@@ -81,21 +81,22 @@
       background-color: $color-white;
     }
 
-    #{$this}__inner_active#{$this}__inner_error {
+    #{$this}-Inner__active#{$this}-Inner__error {
       border: 1px solid $color-red;
       background-color: $color-white;
     }
   }
 
   /* -------------------- Fix autocomplete form -------------------- */
-  #{$this}__inner:-webkit-autofill {
+  #{$this}-Inner:-webkit-autofill {
     -webkit-background-clip: text;
   }
 
-  #{$this}__inner {
+  #{$this}-Inner {
     &:-webkit-autofill {
       border: 1px solid rgba(0, 0, 0, 0.54);
-      & ~ #{$this}__label {
+
+      & ~ #{$this}-Label {
         top: 0;
         padding: 0;
         color: $color-text;
@@ -104,9 +105,10 @@
     }
   }
 
-  &__errorField {
+  &-ErrorField {
     display: block;
     padding-top: 5px;
+    margin-bottom: 5px;
     color: $color-red;
     transition: all 0.3s;
   }
@@ -128,7 +130,7 @@
     transition: background-color 0.25s ease;
   }
 
-  &#{$this}_error {
+  &#{$this}__error {
     background-color: $color-light-red;
 
     &:hover {
@@ -140,12 +142,12 @@
 
 .theme-dark {
   .InputField {
-    &__label .text-dark {
+    &-Label .text-dark {
       color: $color-lighting;
     }
 
-    &_active {
-      .InputField__inner_active {
+    &__active {
+      .InputField-Inner__active {
         border: 1px solid $color-primary;
 
         input:hover,
@@ -154,10 +156,10 @@
         }
       }
 
-      input:-webkit-autofill.Input_active,
-      input:-webkit-autofill.Input_active:hover,
-      input:-webkit-autofill.Input_active:focus,
-      input:-webkit-autofill.Input_active:active {
+      input:-webkit-autofill.Input__active,
+      input:-webkit-autofill.Input__active:hover,
+      input:-webkit-autofill.Input__active:focus,
+      input:-webkit-autofill.Input__active:active {
         -webkit-box-shadow: 0 0 0 30px $color-darkness inset !important;
       }
 
@@ -167,15 +169,16 @@
       }
     }
 
-    & .InputField__errorField .text-dark {
+    & .InputField-ErrorField .text-dark {
       color: $color-red;
     }
 
     /* -------------------- Fix autocomplete form -------------------- */
-    .InputField__inner {
+    .InputField-Inner {
       &:-webkit-autofill {
         color: red;
-        & ~ .InputField__label {
+
+        & ~ .InputField-Label {
           color: $color-white;
         }
       }

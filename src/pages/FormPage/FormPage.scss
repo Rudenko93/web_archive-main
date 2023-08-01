@@ -9,8 +9,6 @@
 
   &-Inner {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-grow: 1;
     flex-direction: column;
     max-width: 470px;
@@ -22,6 +20,7 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+    box-shadow: 0 1px 20px rgba(4, 6, 28, 0.1);
   }
 
   &-Title {
@@ -37,9 +36,5 @@
   &-Control {
     display: flex;
     justify-content: center;
-  }
-
-  &-Button {
-    margin-bottom: 20px;
   }
 }

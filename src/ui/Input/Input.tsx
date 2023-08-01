@@ -1,3 +1,4 @@
+import clsx from "clsx"
 import { forwardRef, memo, useState } from "react"
 import type {
   DetailedHTMLProps,
@@ -5,7 +6,6 @@ import type {
   HTMLAttributes,
   FocusEvent,
 } from "react"
-import clsx from "clsx"
 import { ETypographyVariant, FadeIn, Typography } from "ui"
 import "./Input.scss"
 
@@ -16,6 +16,7 @@ export interface IInputProps
   > {
   autoComplete?: string
   className?: string
+  dataTestId?: string
   error?: string
   isFocused?: boolean
   isRequired?: boolean
@@ -30,6 +31,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
     {
       autoComplete,
       className,
+      dataTestId = "uikit__input",
       error,
       isFocused: isInputFocused,
       isRequired,
@@ -47,7 +49,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
       isInputFocused
     )
 
-    const handleBlur = (event: FocusEvent<HTMLInputElement>) => {
+    const onBlurCallback = (event: FocusEvent<HTMLInputElement>) => {
       if (event.target.value !== "") {
         setIsFocused(true)
       } else {
@@ -59,7 +61,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
       }
     }
 
-    const handleFocus = (event: FocusEvent<HTMLInputElement>) => {
+    const onFocusCallback = (event: FocusEvent<HTMLInputElement>) => {
       if (!isFocused) {
         setIsFocused(true)
       }
@@ -73,11 +75,12 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
       <div
         className={clsx("InputField", className, {
           InputField__active: isFocused,
-        })}>
+        })}
+        data-testid={dataTestId}>
         <div
           className={clsx("InputField-Inner", {
-            "InputField-Inner_active": isFocused,
-            "InputField-Inner_error": error,
+            "InputField-Inner__active": isFocused,
+            "InputField-Inner__error": error,
           })}>
           <input
             className={clsx(className, "Input", {
@@ -89,23 +92,23 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
             type={type}
             ref={ref}
             onChange={onChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
+            onFocus={onFocusCallback}
+            onBlur={onBlurCallback}
             {...rest}
           />
         </div>
 
         {error && (
-          <div className="InputField__errorField">
+          <div className="InputField-ErrorField">
             <FadeIn>
-              <Typography as="h3" variant={ETypographyVariant.TextB3Regular}>
+              <Typography as="span" variant={ETypographyVariant.TextB3Regular}>
                 {error}
               </Typography>
             </FadeIn>
           </div>
         )}
 
-        <div className="InputField__label">
+        <div className="InputField-Label">
           <Typography
             as="label"
             htmlFor={name}
@@ -116,7 +119,7 @@ const InputComponent = forwardRef<HTMLInputElement, IInputProps>(
             }>
             {label}
           </Typography>
-          {isRequired && <span className="InputField__labelRequired"> *</span>}
+          {isRequired && <span className="InputField-LabelRequired"> *</span>}
         </div>
       </div>
     )
