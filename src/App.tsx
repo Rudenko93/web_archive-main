@@ -28,6 +28,7 @@ import {
   PortalPage,
   AutocompletePage,
   SliderPage,
+  BreadcrumbsPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Button,
             element: <ButtonPage />,
+          },
+          {
+            path: EUiRoutes.Breadcrumbs,
+            element: <BreadcrumbsPage />,
           },
           {
             path: EUiRoutes.Checkbox,
