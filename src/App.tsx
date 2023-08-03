@@ -29,6 +29,7 @@ import {
   AutocompletePage,
   SliderPage,
   BreadcrumbsPage,
+  PaginationPage,
 } from "./pages"
 import { EUiRoutes, EMainRoutes } from "./enums/routes"
 import { HomeUi } from "./components/HomeUi"
@@ -108,6 +109,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Overlay,
             element: <OverlayPage />,
+          },
+          {
+            path: EUiRoutes.Pagination,
+            element: <PaginationPage />,
           },
           {
             path: EUiRoutes.Portal,

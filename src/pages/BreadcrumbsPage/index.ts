@@ -1,2 +1,1 @@
-export * from "./BreadcrumbsPage";
-export * from "./BreadcrumbsDetailPage";
+export * from "./BreadcrumbsPage"
