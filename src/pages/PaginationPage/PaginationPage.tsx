@@ -5,6 +5,9 @@ import { ETypographyVariant, Typography, Pagination } from "ui"
 import { getProductsApi } from "services/api/products"
 import { TProducts } from "services/api/products/types"
 import "./PaginationPage.scss"
+import { ProductList } from "components/ProductList"
+
+type TStatus = "loading" | "success" | "error"
 
 export const PaginationPage: FC = () => {
   const location = useLocation()
@@ -20,10 +23,28 @@ export const PaginationPage: FC = () => {
   const [currentPage, setCurrentPage] = useState(+pageNumber)
   const [products, setProducts] = useState<TProducts>()
   const [pageCount, setPageCount] = useState<number>(0)
+  const [status, setStatus] = useState<TStatus>("loading")
+
+  const render = (status: TStatus) => {
+    switch (status) {
+      case "loading":
+        return <h1>Loading...</h1>
+        break
+
+      case "error":
+        return <h1>Something went wrong</h1>
+        break
+
+      case "success":
+        return <ProductList products={products} />
+        break
+    }
+  }
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        setStatus("loading")
         const response = await getProductsApi({ page: currentPage.toString() })
         setPageCount(
           Math.max(
@@ -31,8 +52,10 @@ export const PaginationPage: FC = () => {
           )
         )
         setProducts(response.data)
+        setStatus("success")
       } catch (error) {
         console.error(error)
+        setStatus("error")
       }
     }
     fetchProducts()
@@ -56,9 +79,7 @@ export const PaginationPage: FC = () => {
         pageCount={pageCount}
         onChange={handlePageChange}
       />
-      {/* {products?.map((item) => (
-        <Product key={item.id} img={item.url} />
-      ))} */}
+      {render(status)}
     </section>
   )
 }
