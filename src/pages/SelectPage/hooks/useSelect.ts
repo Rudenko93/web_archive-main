@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import type { MultiValue, OnChangeValue, SingleValue } from "react-select"
 import isNil from "lodash/isNil"
-import type { TSelectMultiType, TSelectOption } from "../../../ui/Select"
+import type { TSelectMultiType, TSelectOption } from "ui/Select"
 
 export const useSelect = () => {
   const PRICE_UP = "ascending price"
