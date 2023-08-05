@@ -11,7 +11,7 @@ type TProps = {
   initialPage?: number
   marginPagesDisplayed?: number
   onChange: ({ selected }: { selected: number }) => void
-  pagesCount: number
+  pageCount: number
   pageRangeDisplayed?: number
   theme?: ETheme
 }
@@ -22,7 +22,7 @@ export const Pagination: FC<TProps> = ({
   initialPage,
   marginPagesDisplayed = 3,
   onChange,
-  pagesCount,
+  pageCount,
   pageRangeDisplayed = 3,
   theme,
 }) => {
@@ -45,7 +45,7 @@ export const Pagination: FC<TProps> = ({
       nextLinkClassName="Pagination__page-link"
       onPageChange={onChange}
       pageClassName="Pagination__page-item"
-      pageCount={pagesCount}
+      pageCount={pageCount}
       pageLinkClassName="Pagination__page-link"
       pageRangeDisplayed={pageRangeDisplayed}
       previousClassName="Pagination__page-item"
@@ -60,6 +60,7 @@ export const Pagination: FC<TProps> = ({
           <Icon type="ArrowR" />
         </>
       }
+      renderOnZeroPageCount={null}
     />
   )
 }

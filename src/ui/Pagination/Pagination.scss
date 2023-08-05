@@ -47,12 +47,15 @@
     outline: transparent;
     cursor: default;
   }
+  svg {
+    fill: $color-suit-gray;
+  }
 
   & > .disabled > a {
     cursor: default;
 
     svg {
-      fill: $color-suit-gray;
+      fill: none;
     }
 
     &:hover {

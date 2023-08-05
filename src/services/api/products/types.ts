@@ -1,7 +1,7 @@
 export type TProducts = IProduct[]
 
-export interface IProductsParams extends URLSearchParams {
-  pageNumber?: string
+export type IProductsParams = {
+  page?: string
 }
 
 export interface IProduct {

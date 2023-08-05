@@ -13,5 +13,5 @@ export const getProductsApi = async (params?: IProductsParams) => {
     },
   }
   const response = await axios.get<TProducts>(url, config)
-  return response.data
+  return response
 }
