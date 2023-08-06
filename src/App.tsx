@@ -1,5 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { MainLayout } from "./components/Layouts"
+import { EUiRoutes, EMainRoutes } from "./enums/routes"
+import { HomeUi } from "./components/HomeUi"
+import { useTheme } from "hooks"
+import { ThemeProvider } from "services/context"
 import {
   TypographyPage,
   UiPage,
@@ -30,12 +34,9 @@ import {
   SliderPage,
   BreadcrumbsPage,
   PaginationPage,
+  BreadcrumbsDetailPage,
 } from "./pages"
-import { EUiRoutes, EMainRoutes } from "./enums/routes"
-import { HomeUi } from "./components/HomeUi"
 import "./App.scss"
-import { useTheme } from "hooks"
-import { ThemeProvider } from "services/context"
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
           {
             path: EUiRoutes.Breadcrumbs,
             element: <BreadcrumbsPage />,
+          },
+          {
+            path: `${EUiRoutes.Breadcrumbs}/:id`,
+            element: <BreadcrumbsDetailPage />,
           },
           {
             path: EUiRoutes.Checkbox,

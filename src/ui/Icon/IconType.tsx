@@ -15,6 +15,7 @@ import { ReactComponent as Light } from "../assets/icons/light.svg"
 import { ReactComponent as Dark } from "../assets/icons/dark.svg"
 import { ReactComponent as ArrowL } from "../assets/icons/arrow-l.svg"
 import { ReactComponent as ArrowR } from "../assets/icons/arrow-r.svg"
+import { ReactComponent as Home } from "../assets/icons/home.svg"
 
 export type IconType =
   | "Git"
@@ -34,6 +35,7 @@ export type IconType =
   | "Dark"
   | "ArrowL"
   | "ArrowR"
+  | "Home"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -53,4 +55,5 @@ export const iconTypes = new Map([
   ["Dark", <Dark />],
   ["ArrowL", <ArrowL />],
   ["ArrowR", <ArrowR />],
+  ["Home", <Home />],
 ])

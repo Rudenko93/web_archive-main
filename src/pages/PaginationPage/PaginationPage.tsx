@@ -29,15 +29,12 @@ export const PaginationPage: FC = () => {
     switch (status) {
       case "loading":
         return <h1>Loading...</h1>
-        break
 
       case "error":
         return <h1>Something went wrong</h1>
-        break
 
       case "success":
         return <ProductList products={products} />
-        break
     }
   }
 

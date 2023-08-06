@@ -1,16 +1,14 @@
 import type { FC } from "react"
-import { Link } from "react-router-dom"
 import { Breadcrumbs, ETypographyVariant, Typography } from "ui"
-import "./BreadcrumbsPage.scss"
+import "./BreadcrumbsDetailPage.scss"
 
-export const BreadcrumbsPage: FC = () => {
+export const BreadcrumbsDetailPage: FC = () => {
   return (
-    <section className="BreadcrumbsPage">
+    <section className="BreadcrumbsDetailPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-        Breadcrumbs
+        Detail page
       </Typography>
       <Breadcrumbs />
-      <Link to={`1`}>Go to detail page</Link>
     </section>
   )
 }
