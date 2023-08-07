@@ -8,9 +8,11 @@ export const useThemeContext = (): TThemeState | null => {
 }
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState(ETheme.Light)
-
+  const [theme, setTheme] = useState<ETheme>(
+    (localStorage.getItem("theme") as ETheme) || ETheme.Light
+  )
   const handleChangeTheme = (theme: ETheme) => {
+    localStorage.setItem("theme", theme)
     setTheme(theme)
   }
 
