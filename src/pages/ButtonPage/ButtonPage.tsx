@@ -5,7 +5,7 @@ import "./ButtonPage.scss"
 export const ButtonPage: React.FC = () => {
   return (
     <section className="ButtonPage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Button
       </Typography>
       <Button>Click</Button>

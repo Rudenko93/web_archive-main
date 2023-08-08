@@ -6,11 +6,13 @@ import "./BreadcrumbsPage.scss"
 export const BreadcrumbsPage: FC = () => {
   return (
     <section className="BreadcrumbsPage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Breadcrumbs
       </Typography>
       <Breadcrumbs />
-      <Link to={`1`}>Go to detail page</Link>
+      <Link style={{ alignSelf: "start" }} to={`1`}>
+        Go to detail page
+      </Link>
     </section>
   )
 }

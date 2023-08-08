@@ -1,6 +1,8 @@
 @import "styles";
 
 .DropDownPage {
+  display: flex;
+  flex-direction: column;
   &__Navigation {
     width: 100%;
   }

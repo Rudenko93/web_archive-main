@@ -1,6 +1,6 @@
 import { useState } from "react"
 import type { FC } from "react"
-import { Tabs } from "ui"
+import { ETypographyVariant, Tabs, Typography } from "ui"
 import type { TTab } from "ui"
 import "./TabsPage.scss"
 
@@ -18,7 +18,9 @@ export const TabsPage: FC = () => {
 
   return (
     <section className="TabsPage">
-      <h2>Tabs</h2>
+      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+        Tabs
+      </Typography>
       <Tabs selectedId={selectedTabId} tabs={tabs} onClick={handleTabClick} />
       <div className="TabsPage-Content">
         {selectedTabId === tabs[0].id && (

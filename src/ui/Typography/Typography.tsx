@@ -12,6 +12,7 @@ type TextOwnProps<E extends ElementType = ElementType> = {
   color?: Color
   variant?: ETypographyVariant
   align?: "start" | "end" | "center"
+  classN?: string
 }
 
 type TextProps<E extends ElementType> = TextOwnProps<E> &
@@ -23,12 +24,14 @@ export const Typography = memo(
     as,
     color = ETextColor.Dark,
     variant = ETypographyVariant.TextH1Bold,
-    align = "center",
+    align = "start",
+    classN,
     ...otherProps
   }: TextProps<E>) => {
-    const currentTheme = clsx(TYPOGRAPHY_THEMES({ color })[variant], {
+    const currentTheme = clsx(TYPOGRAPHY_THEMES({ color })[variant], classN, {
       text_start: align === "start",
       text_end: align === "end",
+      text_center: align === "center",
     })
 
     return createElement(

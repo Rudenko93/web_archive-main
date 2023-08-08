@@ -5,7 +5,7 @@ export const SpinnerPage = () => {
   return (
     <section className="SpinnerPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
-        Select
+        Spinner
       </Typography>
       <Spinner />
     </section>

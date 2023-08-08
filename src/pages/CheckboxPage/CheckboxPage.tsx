@@ -33,7 +33,7 @@ export const CheckboxPage: FC = () => {
 
   return (
     <section className="CheckboxPage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Checkbox
       </Typography>
       <div>
