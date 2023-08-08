@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom"
 import { ThemeSwitcherCustom } from "components"
 import { EMainRoutes } from "enums"
 import { toCapitalize } from "utils"
-import "./Menu.scss"
 import { Icon } from "ui"
+import "./Menu.scss"
 
 const navList = [
   EMainRoutes.Ui,
+  EMainRoutes.Features,
   EMainRoutes.Hooks,
-  EMainRoutes.Contacts,
-  EMainRoutes.Others,
+  EMainRoutes.About,
 ]
 
 export const Menu = () => {
@@ -18,7 +18,8 @@ export const Menu = () => {
       <div className="menu-left">
         <input type="text" placeholder="Search" />
         <NavLink to={"/"} key={"/"} className={"logo"}>
-          Ui
+          <Icon type="Web" />
+          Web Archive
         </NavLink>
         <ThemeSwitcherCustom />
       </div>

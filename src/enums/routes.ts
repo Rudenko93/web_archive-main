@@ -30,8 +30,8 @@ export enum EUiRoutes {
 }
 
 export enum EMainRoutes {
+  Features = "features",
   Ui = "ui",
   Hooks = "hooks",
-  Contacts = "contacts",
-  Others = "others",
+  About = "about",
 }

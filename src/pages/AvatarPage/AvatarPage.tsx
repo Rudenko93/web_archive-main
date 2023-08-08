@@ -6,7 +6,7 @@ import { Avatar, ETypographyVariant, Typography } from "ui"
 export const AvatarPage: React.FC = () => {
   return (
     <section className="AvatarPage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Avatar
       </Typography>
       <Typography

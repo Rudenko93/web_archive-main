@@ -20,7 +20,7 @@ export const AutocompletePage: FC = () => {
 
   return (
     <section className="AutocompletePage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Autocomplete
       </Typography>
       <Typography

@@ -4,7 +4,7 @@ import "./AccordionPage.scss"
 export const AccordionPage = () => {
   return (
     <section className="AccordionPage">
-      <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
+      <Typography align="start" as="h1" variant={ETypographyVariant.TextH1Bold}>
         Accordion
       </Typography>
       <Accordion label="It's an accordion">
