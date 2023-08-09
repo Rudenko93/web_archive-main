@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   min-height: 50px;
-  background-color: $color-menu-bg-light;
+  color: $color-white;
+  background-image: $background-gradient;
 
   &-left {
     display: flex;
@@ -33,7 +34,7 @@
     padding: 18px 20px;
     width: 100%;
     cursor: pointer;
-    transition: all $transition;
+    transition: $transition;
 
     &__active {
       color: $color-text-active-light;
@@ -41,7 +42,7 @@
 
     &:hover {
       background-color: $color-text-active-light;
-      color: $color-text-dark;
+      color: $color-white;
     }
   }
 

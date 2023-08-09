@@ -26,7 +26,12 @@ export const Accordion: React.FC<IAccordionProps> = ({
       })}>
       <div className="Accordion__header" onClick={handleToggle}>
         <div className="Accordion__header-label">{label}</div>
-        <Icon className="Accordion__header-icon" type="ArrowDown" />
+        <Icon
+          width={15}
+          height={15}
+          className="Accordion__header-icon"
+          type="ArrowDown"
+        />
       </div>
       {isOpen && <div className="Accordion__content">{children}</div>}
     </div>
