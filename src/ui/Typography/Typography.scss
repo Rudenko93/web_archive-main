@@ -1,9 +1,14 @@
+@import "styles";
 $base-font-family: "Roboto", sans-serif;
 
 .text {
   font-family: $base-font-family;
   font-style: normal;
   line-height: 1.25;
+
+  &-aqua {
+    color: $color-text-aqua;
+  }
   &_start {
     align-self: flex-start;
   }
@@ -11,6 +16,9 @@ $base-font-family: "Roboto", sans-serif;
     align-self: flex-end;
   }
 
+  &-extra-large {
+    font-size: 4rem;
+  }
   &-h1 {
     font-size: 32px;
   }

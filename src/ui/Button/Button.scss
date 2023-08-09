@@ -11,8 +11,11 @@
 
   background-color: $color-primary;
 
-  padding: 6px 32px;
-  border: 1px solid $color-primary;
+  font-size: 18px;
+  color: $color-white;
+
+  padding: 10px 32px;
+  border: 1px solid $color-text-aqua;
   border-radius: $border-radius;
 
   transition: $transition;

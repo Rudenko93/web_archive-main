@@ -10,6 +10,10 @@ export const TYPOGRAPHY_THEMES = (options: ThemesOptions) => {
   const mainStyles = cn(`${EColorType.Text}-${options?.color}`)
 
   return {
+    [ETypographyVariant.ExtraLarge]: cn(
+      "text text-extra-large text-large",
+      mainStyles
+    ),
     [ETypographyVariant.TextH1Bold]: cn("text text-h1 text-bold", mainStyles),
     [ETypographyVariant.TextH1Medium]: cn(
       "text text-h1 text-medium",

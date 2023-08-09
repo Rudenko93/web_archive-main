@@ -1,5 +1,5 @@
-$color-primary: rgba(176, 151, 106, 1); /* #B0976A */
-$color-primary-hover: rgba(153, 126, 77, 1); /* #997E4D */
+$color-primary: #319795; /* ok */
+$color-primary-hover: #2c7a7b; /* ok */
 $color-primary-light: rgba(239, 234, 225, 1); /* #efeae1 */
 $color-primary-light-hover: rgba(223, 213, 195, 1); /* #dfd5c3 */
 
@@ -42,9 +42,9 @@ $color-bg-input: rgba(236, 241, 247, 1); /* #ecf1f7 */
 $color-bg-input-hover: rgba(228, 235, 243, 1); /* #e4ebf3 */
 
 $overlayOpacity: 0.6;
-$transition: all 0.3s;
-$border-radius: 4px;
-$box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+$transition: all 0.3s; /* ok */
+$border-radius: 4px; /* ok */
+$box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5); /* ok */
 $background-gradient: linear-gradient(white, white) padding-box,
   linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
 
@@ -86,3 +86,11 @@ $color-menu-bg-dark: #370654;
 //special
 
 $color-text-special: red;
+
+//new my
+$color-text-aqua: #319795;
+$color-text-cyan: #4fd1c5;
+
+$color-text-main: #2d3748;
+
+$color-bg-main-dark: #1a202c;

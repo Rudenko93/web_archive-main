@@ -35,6 +35,7 @@ import {
   BreadcrumbsPage,
   PaginationPage,
   BreadcrumbsDetailPage,
+  HomePage,
 } from "./pages"
 import "./App.scss"
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
       {
         path: EMainRoutes.Ui,
         element: <UiPage />,

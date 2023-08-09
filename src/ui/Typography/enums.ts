@@ -1,6 +1,7 @@
 export enum ETextColor {
   Light = "light",
   Dark = "dark",
+  Aqua = "aqua",
 }
 
 export enum EColorType {
@@ -9,6 +10,7 @@ export enum EColorType {
 }
 
 export enum ETypographyVariant {
+  ExtraLarge = "Extra-large",
   TextH1Bold = "Text-H1Bold",
   TextH1Medium = "Text-H1Medium",
   TextH2Medium = "Text-H2Medium",
