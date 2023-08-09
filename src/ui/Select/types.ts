@@ -80,6 +80,7 @@ export type TSelectVariantStyle = {
     border?: string
     borderRadius?: string
     cursor?: string
+    color?: string
     transition?: string
     ":active"?: {
       border?: string
@@ -89,6 +90,9 @@ export type TSelectVariantStyle = {
       border?: string
       transition?: string
     }
+  }
+  input: {
+    color: string
   }
   singleValue: {
     color?: string

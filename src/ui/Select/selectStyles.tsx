@@ -11,6 +11,10 @@ export const selectStyles = (
   const style = VARIANTS[variant]
 
   return {
+    input: (provided) => ({
+      ...provided,
+      color: style.input.color,
+    }),
     control: (provided) => ({
       ...provided,
       background: style.control.background,

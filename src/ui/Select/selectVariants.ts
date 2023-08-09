@@ -1,11 +1,12 @@
 import type { ETheme } from "enums"
 import type { TSelectVariantStyle } from "./types"
 
-const COLOR_PRIMARY = "#b0976a"
-const COLOR_PRIMARY_HOVER = "#997e4d"
+const COLOR_PRIMARY = "#319795"
+const COLOR_PRIMARY_HOVER = "#2c7a7b"
 const COLOR_WHITE = "#fff"
-const COLOR_DARKNESS = "#1f2029"
+const COLOR_DARKNESS = "#44337A"
 const COLOR_GRAY = "#e4e4e4"
+const COLOR_GRADIENT = "linear-gradient(to right, #086F83, #44337A)"
 const CURRENT_COLOR = "currentColor"
 const BORDER_RADIUS = "4px"
 const CURSOR = "pointer"
@@ -17,19 +18,21 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
   // Dark theme
   DARK: {
     control: {
-      background:
-        "linear-gradient(40deg, rgba(138, 143, 160, 0.16), rgba(31, 32, 41, 0.24) 40%),\n" +
-        "      linear-gradient(210deg, rgba(138, 143, 160, 0.5), rgba(31, 32, 41, 0.24) 40%)",
+      background: COLOR_GRADIENT,
       border: `1px solid ${TRANSPARENT}`,
       borderRadius: BORDER_RADIUS,
       cursor: CURSOR,
       transition: TRANSITION,
+      color: "#fff",
       ":active": {
         border: `1px solid ${COLOR_PRIMARY}`,
       },
       ":hover": {
         border: `1px solid ${COLOR_PRIMARY}`,
       },
+    },
+    input: {
+      color: COLOR_WHITE,
     },
     singleValue: {
       color: CURRENT_COLOR,
@@ -75,6 +78,9 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
       ":hover": {
         border: `1px solid ${COLOR_PRIMARY}`,
       },
+    },
+    input: {
+      color: "#44337A",
     },
     singleValue: {
       color: CURRENT_COLOR,
