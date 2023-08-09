@@ -69,3 +69,9 @@
     }
   }
 }
+
+.theme-dark {
+  .Pagination > li > a {
+    color: $color-white;
+  }
+}

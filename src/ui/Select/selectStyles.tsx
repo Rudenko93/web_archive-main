@@ -25,6 +25,10 @@ export const selectStyles = (
       ":active": style.control[":active"],
       ":hover": style.control[":hover"],
     }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: style.placeholder.color,
+    }),
     singleValue: (provided) => ({
       ...provided,
       color: style.singleValue.color,

@@ -14,7 +14,7 @@ export const HamburgerPage: React.FC = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Hamburger
       </Typography>
-      <Hamburger color="black" isActive={isActive} onClick={handleToggle} />
+      <Hamburger isActive={isActive} onClick={handleToggle} />
     </section>
   )
 }

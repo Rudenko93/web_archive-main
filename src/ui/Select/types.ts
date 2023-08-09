@@ -94,6 +94,9 @@ export type TSelectVariantStyle = {
   input: {
     color: string
   }
+  placeholder: {
+    color?: string
+  }
   singleValue: {
     color?: string
   }

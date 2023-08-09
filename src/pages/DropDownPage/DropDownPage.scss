@@ -16,6 +16,7 @@
   &__MenuItem {
     position: relative;
     padding: 0 50px;
+    color: $color-text;
     border-bottom: 1px solid $color-light-gray;
     cursor: pointer;
     transition: all 0.15s;
@@ -80,7 +81,26 @@ $transition: 0.15s;
     transition: all 0.15s;
 
     &:hover {
-      background-color: rgba(223, 213, 195, 1);
+      background-color: $color-primary-hover;
+    }
+  }
+}
+
+.theme-dark {
+  .DropDownPage {
+    &__Navigation {
+      span {
+        color: $color-white;
+      }
+    }
+    .DropDownCatalog {
+      background-color: $color-dark-background;
+      color: $color-white;
+      &__MenuItem {
+        &:hover {
+          background-color: $color-dark-background-hover;
+        }
+      }
     }
   }
 }

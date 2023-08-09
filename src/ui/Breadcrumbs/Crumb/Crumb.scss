@@ -1,11 +1,9 @@
 @import "styles/index";
 
-$transition: all 0.15s;
-
 .Crumb {
   display: flex;
   align-items: center;
-  color: $color-text;
+  color: inherit;
 
   &-Link {
     display: flex;

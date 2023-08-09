@@ -17,22 +17,10 @@
   border-radius: 5px;
   transition: $transition;
 
-  &__black {
+  background-color: $color-text;
+  &::before,
+  &::after {
     background-color: $color-text;
-
-    &::before,
-    &::after {
-      background-color: $color-text;
-    }
-  }
-
-  &__white {
-    background-color: white;
-
-    &::before,
-    &::after {
-      background-color: white;
-    }
   }
 
   &::before,
@@ -65,6 +53,20 @@
 
     &::after {
       transform: rotate(-45deg) translate(10px, 10px);
+    }
+  }
+}
+
+.theme-dark {
+  .Burger {
+    background-color: $color-white;
+    &::before,
+    &::after {
+      background-color: $color-white;
+    }
+
+    &_active {
+      background-color: transparent;
     }
   }
 }

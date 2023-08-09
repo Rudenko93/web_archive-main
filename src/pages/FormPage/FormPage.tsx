@@ -42,11 +42,7 @@ export const FormPage: FC = () => {
               </div>
               <div className="FormPage-Control">
                 <Button className="FormPage-Button" typeButton="submit">
-                  <Typography
-                    as="h3"
-                    variant={ETypographyVariant.TextB3Regular}>
-                    Send
-                  </Typography>
+                  Send
                 </Button>
               </div>
             </form>

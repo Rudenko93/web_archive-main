@@ -1,8 +1,9 @@
 import clsx from "clsx"
+import { isNil } from "lodash"
 import { ETypographyVariant, Typography, Select } from "ui"
 import { ETheme } from "enums"
 import { useSelect } from "./hooks"
-
+import { useThemeContext } from "hooks"
 import "./SelectPage.scss"
 
 type TSorting = {
@@ -19,7 +20,8 @@ export const SelectPage: React.FC<TProps> = ({
   onSortingChange,
   sorting = "price_asc",
 }) => {
-  const theme = ETheme.Light
+  const themeState = useThemeContext()
+  const theme = !isNil(themeState) ? themeState.theme : ETheme.Light
   const {
     isSelectOpened,
     multipleSelectedOption,

@@ -1,6 +1,6 @@
 import { Tooltip as ReactTooltip, ChildrenType } from "react-tooltip"
-import "./Tooltip.scss"
 import clsx from "clsx"
+import "./Tooltip.scss"
 
 type TPlace =
   | "top"

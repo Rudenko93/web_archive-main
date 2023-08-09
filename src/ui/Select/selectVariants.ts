@@ -4,9 +4,9 @@ import type { TSelectVariantStyle } from "./types"
 const COLOR_PRIMARY = "#319795"
 const COLOR_PRIMARY_HOVER = "#2c7a7b"
 const COLOR_WHITE = "#fff"
-const COLOR_DARKNESS = "#44337A"
-const COLOR_GRAY = "#e4e4e4"
-const COLOR_GRADIENT = "linear-gradient(to right, #086F83, #44337A)"
+const COLOR_DARKNESS = "#524090"
+const COLOR_GRAY = "#aaaaaa"
+const COLOR_GRADIENT = "linear-gradient(to right, #66b1c0, #8161c5)"
 const CURRENT_COLOR = "currentColor"
 const BORDER_RADIUS = "4px"
 const CURSOR = "pointer"
@@ -33,6 +33,9 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
     },
     input: {
       color: COLOR_WHITE,
+    },
+    placeholder: {
+      color: COLOR_GRAY,
     },
     singleValue: {
       color: CURRENT_COLOR,
@@ -81,6 +84,9 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
     },
     input: {
       color: "#44337A",
+    },
+    placeholder: {
+      color: COLOR_GRAY,
     },
     singleValue: {
       color: CURRENT_COLOR,

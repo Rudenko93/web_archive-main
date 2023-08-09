@@ -20,11 +20,38 @@ export const template = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitiona
 	<meta name="ShareDoc" content="false"/>
 	
 	<style type="text/css">
-		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
-		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
-		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
-		comment { display:none;  } 
-	</style>
+      body,
+      div,
+      table,
+      thead,
+      tbody,
+      tfoot,
+      tr,
+      th,
+      td,
+      p {
+        font-family: "Liberation Sans";
+        font-size: x-small;
+        background: #fff;
+      }
+      a.comment-indicator:hover + comment {
+        background: #ffd;
+        position: absolute;
+        display: block;
+        border: 1px solid black;
+        padding: 0.5em;
+      }
+      a.comment-indicator {
+        background: red;
+        display: inline-block;
+        border: 1px solid black;
+        width: 0.5em;
+        height: 0.5em;
+      }
+      comment {
+        display: none;
+      }
+    </style>
 	
 </head>
 

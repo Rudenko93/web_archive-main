@@ -18,11 +18,7 @@ export const SidebarPage: React.FC = () => {
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
         Sidebar
       </Typography>
-      <Hamburger
-        color="black"
-        isActive={isActive}
-        onClick={handleSidebarOpen}
-      />
+      <Hamburger isActive={isActive} onClick={handleSidebarOpen} />
       <Sidebar
         className="SidebarPageSidebar"
         isActive={isActive}

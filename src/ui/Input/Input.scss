@@ -10,10 +10,10 @@
 
   &-Label {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 12px;
     z-index: 1;
-    color: $color-lighting;
+    color: $color-dark-gray;
     pointer-events: none;
     transition: $transition;
 
@@ -55,7 +55,7 @@
     #{$this}-Label {
       top: 0;
       padding: 0;
-      color: $color-lighting;
+      color: $color-dark-gray;
     }
 
     #{$this}-Inner__active {
@@ -124,6 +124,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   outline: transparent;
+  font-size: 16px;
 
   &:hover {
     background-color: $color-primary-light-hover;
@@ -143,7 +144,7 @@
 .theme-dark {
   .InputField {
     &-Label .text-dark {
-      color: $color-lighting;
+      color: $color-dark-gray;
     }
 
     &__active {
@@ -152,7 +153,7 @@
 
         input:hover,
         input {
-          background-color: $color-darkness;
+          background-image: $background-light-gradient;
         }
       }
 
@@ -160,12 +161,12 @@
       input:-webkit-autofill.Input__active:hover,
       input:-webkit-autofill.Input__active:focus,
       input:-webkit-autofill.Input__active:active {
-        -webkit-box-shadow: 0 0 0 30px $color-darkness inset !important;
+        -webkit-box-shadow: 0 0 0 30px $background-gradient inset !important;
       }
 
       & textarea,
       & textarea:hover {
-        background-color: $color-darkness;
+        background-image: $background-gradient;
       }
     }
 
@@ -190,16 +191,16 @@
   }
 
   .Input {
-    background-color: $color-darkness;
+    background-image: $background-gradient;
     border: 1px solid $color-nightSky;
     color: $color-white;
 
     &.Input__error {
-      background-color: $color-darkness;
+      background-image: $background-light-gradient;
       border: 1px solid $color-red;
 
       &:hover {
-        background-color: $color-darkness;
+        background-image: $background-light-gradient;
       }
     }
   }

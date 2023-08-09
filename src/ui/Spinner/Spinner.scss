@@ -1,3 +1,11 @@
+@import "styles";
+
 .Spinner {
   align-self: flex-start;
+}
+
+.theme-dark {
+  svg {
+    color: $color-white;
+  }
 }

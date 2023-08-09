@@ -26,7 +26,7 @@ export const AutocompletePage: FC = () => {
       <Typography
         align="start"
         as="span"
-        variant={ETypographyVariant.TextB4Regular}>
+        variant={ETypographyVariant.TextB2Regular}>
         Please enter numbers from 1 to 10
       </Typography>
       <Autocomplete
