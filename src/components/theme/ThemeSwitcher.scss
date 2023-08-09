@@ -3,7 +3,7 @@
 .ThemeSwitcher {
   position: relative;
   max-width: 94px;
-  min-width: 74px;
+  min-width: 80px;
   width: 100%;
   height: 40px;
 
@@ -39,11 +39,11 @@
 
     &__checked {
       svg {
-        fill: $color-primary;
+        fill: $color-primary-light;
       }
 
       path {
-        fill: $color-primary;
+        fill: $color-primary-light;
       }
     }
   }
