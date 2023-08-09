@@ -36,6 +36,7 @@ import {
   PaginationPage,
   BreadcrumbsDetailPage,
   HomePage,
+  NotFoundPage,
 } from "./pages"
 import "./App.scss"
 
@@ -177,6 +178,10 @@ const router = createBrowserRouter([
       {
         path: EMainRoutes.Hooks,
         element: <HooksPage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },

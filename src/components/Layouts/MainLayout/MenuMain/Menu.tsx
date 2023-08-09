@@ -6,10 +6,10 @@ import { Icon } from "ui"
 import "./Menu.scss"
 
 const navList = [
-  EMainRoutes.Ui,
-  EMainRoutes.Features,
-  EMainRoutes.Hooks,
-  EMainRoutes.About,
+  [EMainRoutes.Ui, "ui/accordion"],
+  [EMainRoutes.Features, "features"],
+  [EMainRoutes.Hooks, "hooks"],
+  [EMainRoutes.About, "about"],
 ]
 
 export const Menu = () => {
@@ -29,9 +29,9 @@ export const Menu = () => {
             className={({ isActive }) =>
               isActive ? "menu-link menu-link__active" : "menu-link"
             }
-            to={link}
-            key={link}>
-            {toCapitalize(link)}
+            to={link[1]}
+            key={link[1]}>
+            {toCapitalize(link[0])}
           </NavLink>
         ))}
       </div>

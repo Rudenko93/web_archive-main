@@ -1,8 +1,9 @@
+import { FC } from "react"
 import { Button, ETypographyVariant, Typography } from "ui"
 import { useNavigate } from "react-router-dom"
 import "./HomePage.scss"
 
-export const HomePage = () => {
+export const HomePage: FC = () => {
   const navigate = useNavigate()
   const handleClick = () => navigate("/ui/accordion")
 
@@ -14,7 +15,7 @@ export const HomePage = () => {
           as="h1"
           classN="margin-bottom-0"
           variant={ETypographyVariant.ExtraLarge}>
-          The web archive contains a complete set of free user
+          Web Archive contains a complete set of free user
         </Typography>
         <Typography
           align="center"
