@@ -1,8 +1,9 @@
+import { FC } from "react"
+import { useNavigate } from "react-router-dom"
 import { Button, ETypographyVariant, Typography } from "ui"
 import "./NotFoundPage.scss"
-import { useNavigate } from "react-router-dom"
 
-export const NotFoundPage = () => {
+export const NotFoundPage: FC = () => {
   const navigate = useNavigate()
   const handleClick = () => navigate("/")
 

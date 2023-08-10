@@ -1,22 +1,22 @@
 import { FC } from "react"
 import { useNavigate } from "react-router-dom"
 import { Button, ETypographyVariant, Typography } from "ui"
-import "./MainHooksPage.scss"
+import "./AboutPage.scss"
 
-export const MainHooksPage: FC = () => {
+export const AboutPage: FC = () => {
   const navigate = useNavigate()
   const handleClick = () => navigate("/")
 
   return (
-    <div className="MainHooksPage">
-      <div className="MainHooksPage__container">
+    <div className="AboutPage">
+      <div className="AboutPage__container">
         <Typography
           align="center"
           as="h1"
           color="aqua"
           classN="margin-top-0"
           variant={ETypographyVariant.ExtraLarge}>
-          Hooks page
+          About page
         </Typography>
         <Typography
           as="h2"

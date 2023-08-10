@@ -1,1 +1,0 @@
-export { HooksPage } from "./HooksPage"

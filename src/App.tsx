@@ -6,7 +6,6 @@ import { ThemeProvider } from "services/context"
 import {
   TypographyPage,
   UiPage,
-  HooksPage,
   ButtonPage,
   IconPage,
   SelectPage,
@@ -39,6 +38,8 @@ import {
   MainUiPage,
   MainFeaturesPage,
   FeaturesPage,
+  MainHooksPage,
+  AboutPage,
 } from "./pages"
 import "./App.scss"
 
@@ -198,7 +199,11 @@ const router = createBrowserRouter([
       },
       {
         path: EMainRoutes.Hooks,
-        element: <HooksPage />,
+        element: <MainHooksPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
       },
       {
         path: "*",
