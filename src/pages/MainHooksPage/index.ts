@@ -1,0 +1,1 @@
+export { MainHooksPage } from "./MainHooksPage"

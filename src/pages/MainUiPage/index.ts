@@ -1,0 +1,1 @@
+export { MainUiPage } from "./MainUiPage"

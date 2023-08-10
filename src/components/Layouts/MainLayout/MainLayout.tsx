@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from "react"
+import { memo, useEffect } from "react"
 
 import { Outlet } from "react-router-dom"
 import { Menu } from "./MenuMain"

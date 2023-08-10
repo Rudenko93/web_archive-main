@@ -6,8 +6,8 @@ import { Icon } from "ui"
 import "./Menu.scss"
 
 const navList = [
-  [EMainRoutes.Ui, "ui/accordion"],
-  [EMainRoutes.Features, "features"],
+  [EMainRoutes.Ui, "ui/avatar"],
+  [EMainRoutes.Features, "features/accordion"],
   [EMainRoutes.Hooks, "hooks"],
   [EMainRoutes.About, "about"],
 ]

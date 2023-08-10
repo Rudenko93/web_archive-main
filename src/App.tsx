@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { MainLayout } from "./components/Layouts"
-import { EUiRoutes, EMainRoutes } from "./enums/routes"
-import { HomeUi } from "./components/HomeUi"
+import { EUiRoutes, EMainRoutes, EFeaturedRoutes } from "./enums/routes"
 import { useTheme } from "hooks"
 import { ThemeProvider } from "services/context"
 import {
@@ -37,6 +36,9 @@ import {
   BreadcrumbsDetailPage,
   HomePage,
   NotFoundPage,
+  MainUiPage,
+  MainFeaturesPage,
+  FeaturesPage,
 } from "./pages"
 import "./App.scss"
 
@@ -54,17 +56,10 @@ const router = createBrowserRouter([
         element: <UiPage />,
         children: [
           {
-            path: EUiRoutes.Home,
-            element: <HomeUi />,
+            path: EUiRoutes.Main,
+            element: <MainUiPage />,
           },
-          {
-            path: EUiRoutes.Accordion,
-            element: <AccordionPage />,
-          },
-          {
-            path: EUiRoutes.Autocomplete,
-            element: <AutocompletePage />,
-          },
+
           {
             path: EUiRoutes.Typography,
             element: <TypographyPage />,
@@ -85,26 +80,7 @@ const router = createBrowserRouter([
             path: `${EUiRoutes.Breadcrumbs}/:id`,
             element: <BreadcrumbsDetailPage />,
           },
-          {
-            path: EUiRoutes.Checkbox,
-            element: <CheckboxPage />,
-          },
-          {
-            path: EUiRoutes.Copy,
-            element: <CopyPage />,
-          },
-          {
-            path: EUiRoutes.DocumentViewer,
-            element: <DocumentViewerPage />,
-          },
-          {
-            path: EUiRoutes.DropDown,
-            element: <DropDownPage />,
-          },
-          {
-            path: EUiRoutes.Form,
-            element: <FormPage />,
-          },
+
           {
             path: EUiRoutes.Hamburger,
             element: <HamburgerPage />,
@@ -121,26 +97,12 @@ const router = createBrowserRouter([
             path: EUiRoutes.Overlay,
             element: <OverlayPage />,
           },
-          {
-            path: EUiRoutes.Pagination,
-            element: <PaginationPage />,
-          },
-          {
-            path: EUiRoutes.Portal,
-            element: <PortalPage />,
-          },
-          {
-            path: EUiRoutes.Rating,
-            element: <RatingPage />,
-          },
+
           {
             path: EUiRoutes.Scrollbar,
             element: <ScrollbarPage />,
           },
-          {
-            path: EUiRoutes.Select,
-            element: <SelectPage />,
-          },
+
           {
             path: EUiRoutes.Sidebar,
             element: <SidebarPage />,
@@ -149,29 +111,88 @@ const router = createBrowserRouter([
             path: EUiRoutes.Skeleton,
             element: <SkeletonPage />,
           },
-          {
-            path: EUiRoutes.Slider,
-            element: <SliderPage />,
-          },
+
           {
             path: EUiRoutes.Spinner,
             element: <SpinnerPage />,
           },
           {
-            path: EUiRoutes.Switch,
+            path: EUiRoutes.Typography,
+            element: <TypographyPage />,
+          },
+        ],
+      },
+
+      {
+        path: EMainRoutes.Features,
+        element: <FeaturesPage />,
+        children: [
+          {
+            path: EFeaturedRoutes.Main,
+            element: <MainFeaturesPage />,
+          },
+          {
+            path: EFeaturedRoutes.Accordion,
+            element: <AccordionPage />,
+          },
+          {
+            path: EFeaturedRoutes.Autocomplete,
+            element: <AutocompletePage />,
+          },
+
+          {
+            path: EFeaturedRoutes.Checkbox,
+            element: <CheckboxPage />,
+          },
+          {
+            path: EFeaturedRoutes.Copy,
+            element: <CopyPage />,
+          },
+          {
+            path: EFeaturedRoutes.DocumentViewer,
+            element: <DocumentViewerPage />,
+          },
+          {
+            path: EFeaturedRoutes.DropDown,
+            element: <DropDownPage />,
+          },
+          {
+            path: EFeaturedRoutes.Form,
+            element: <FormPage />,
+          },
+
+          {
+            path: EFeaturedRoutes.Pagination,
+            element: <PaginationPage />,
+          },
+          {
+            path: EFeaturedRoutes.Portal,
+            element: <PortalPage />,
+          },
+          {
+            path: EFeaturedRoutes.Rating,
+            element: <RatingPage />,
+          },
+          {
+            path: EFeaturedRoutes.Select,
+            element: <SelectPage />,
+          },
+          {
+            path: EFeaturedRoutes.Slider,
+            element: <SliderPage />,
+          },
+
+          {
+            path: EFeaturedRoutes.Switch,
             element: <SwitcherPage />,
           },
           {
-            path: EUiRoutes.Tabs,
+            path: EFeaturedRoutes.Tabs,
             element: <TabsPage />,
           },
           {
-            path: EUiRoutes.Tooltip,
+            path: EFeaturedRoutes.Tooltip,
             element: <TooltipPage />,
-          },
-          {
-            path: EUiRoutes.Typography,
-            element: <TypographyPage />,
           },
         ],
       },
