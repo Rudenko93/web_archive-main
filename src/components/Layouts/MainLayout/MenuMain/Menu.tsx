@@ -3,6 +3,7 @@ import { ThemeSwitcherCustom } from "components"
 import { EMainRoutes } from "enums"
 import { toCapitalize } from "utils"
 import { Icon } from "ui"
+import { Search } from "./Search"
 import "./Menu.scss"
 
 const navList = [
@@ -16,7 +17,7 @@ export const Menu = () => {
   return (
     <div className="menu">
       <div className="menu-left">
-        <input type="text" placeholder="Search" />
+        <Search />
         <NavLink to={"/"} key={"/"} className={"logo"}>
           <Icon type="Web" />
           Web Archive

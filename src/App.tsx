@@ -213,12 +213,13 @@ const router = createBrowserRouter([
   },
 ])
 
-function App() {
+export const App: React.FC = () => {
   const themeState = useTheme()
   return (
     <ThemeProvider value={themeState}>
       <div className="App">
         <RouterProvider router={router} />
+        {/* <>{useScrollToTop()}</> */}
       </div>
     </ThemeProvider>
   )
