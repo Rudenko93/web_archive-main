@@ -9,6 +9,6 @@ type TProps = {
 }
 
 export const FormErrors: FC<TProps> = ({ errors }) => {
-  const errorList = useGetFormErrors({ data: errors }) as TError[]
+  const errorList = useGetFormErrors({ data: errors }) as TError[] | undefined
   return <Error errors={errorList} />
 }

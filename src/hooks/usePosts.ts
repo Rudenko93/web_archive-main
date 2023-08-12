@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import type { MultiValue, OnChangeValue, SingleValue } from "react-select"
 import debounce from "lodash/debounce"
 import isNil from "lodash/isNil"
@@ -75,10 +75,11 @@ export const usePosts = () => {
     }
   }
 
-  const debouncedFetcher = useCallback(
-    debounce(({ inputValue, callback }) => {
-      void fetchPosts({ inputValue, callback })
-    }, 300),
+  const debouncedFetcher = useMemo(
+    () =>
+      debounce(({ inputValue, callback }) => {
+        void fetchPosts({ inputValue, callback })
+      }, 300),
     []
   )
 

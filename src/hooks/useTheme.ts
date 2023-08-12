@@ -21,5 +21,5 @@ export const useTheme = () => {
       theme,
       onChangeTheme: handleChangeTheme,
     }
-  }, [theme, setTheme])
+  }, [theme])
 }

@@ -1,4 +1,4 @@
-import { Accordion, ETypographyVariant, Icon, Typography } from "ui"
+import { Accordion, ETypographyVariant, Typography } from "ui"
 import "./AccordionPage.scss"
 
 export const AccordionPage = () => {

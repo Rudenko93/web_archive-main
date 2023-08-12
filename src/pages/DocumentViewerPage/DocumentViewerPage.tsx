@@ -49,7 +49,11 @@ export const DocumentViewerPage: React.FC = () => {
         align="start">
         Document viewer with standard "iframe" tag
       </Typography>
-      <iframe srcDoc={template} width="200px" height="200px"></iframe>
+      <iframe
+        srcDoc={template}
+        title="Document"
+        width="200px"
+        height="200px"></iframe>
     </section>
   )
 }

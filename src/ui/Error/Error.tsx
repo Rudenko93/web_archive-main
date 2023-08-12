@@ -42,7 +42,7 @@ const ErrorComponent = forwardRef<HTMLDivElement, TErrorProps>(
                     <Typography
                       as="h3"
                       variant={ETypographyVariant.TextB3Regular}>
-                      {error.title}
+                      {error.title || "error"}
                     </Typography>
                   </FadeIn>
                 </li>

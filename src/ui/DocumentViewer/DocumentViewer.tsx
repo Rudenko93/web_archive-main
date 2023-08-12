@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef, useState } from "react"
+import React, { memo, useCallback, useEffect, useRef, useState } from "react"
 import shadowRoot from "react-shadow"
 import clsx from "clsx"
 import { ButtonIcon } from "ui"
@@ -25,7 +25,7 @@ const Component: React.FC<TProps> = ({ className, step = 0.1, template }) => {
   const documentRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState(defaultPosition)
 
-  const handleSetDefault = () => {
+  const handleSetDefault = useCallback(() => {
     if (containerRef.current && contentRef.current && documentRef.current) {
       setPosition({
         scale: getDefaultScale(),
@@ -35,7 +35,7 @@ const Component: React.FC<TProps> = ({ className, step = 0.1, template }) => {
           documentRef.current.clientHeight / containerRef.current?.clientHeight,
       })
     }
-  }
+  }, [])
 
   useEffect(() => {
     if (contentRef.current && documentRef.current && containerRef.current) {
@@ -55,7 +55,7 @@ const Component: React.FC<TProps> = ({ className, step = 0.1, template }) => {
 
       handleSetDefault()
     }
-  }, [contentRef, containerRef])
+  }, [contentRef, containerRef, handleSetDefault])
 
   const getDefaultScale = () => {
     if (containerRef.current && contentRef.current) {

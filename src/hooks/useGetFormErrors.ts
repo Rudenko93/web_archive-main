@@ -15,9 +15,7 @@ type TParams = {
   }
 }
 
-type TUseGetFormErrors = (
-  params: TParams
-) =>
+type TUseGetFormErrors = (params: TParams) =>
   | {
       title:
         | string
