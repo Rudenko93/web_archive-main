@@ -2,12 +2,11 @@ import { addDays, format, subDays } from "date-fns"
 
 import { useCallback, useState } from "react"
 import type { FC } from "react"
-import { Calendar, ETypographyVariant, Typography } from "ui"
+import { Calendar, ETypographyVariant, Typography, TCalendarValue } from "ui"
 import { enUS } from "date-fns/locale"
 import "./CalendarPage.scss"
 
 export const CalendarPage: FC = () => {
-  // Calendar
   const [valueCalendar, setValueCalendar] = useState<TCalendarValue>(new Date())
   const formattedValueCalendar =
     valueCalendar && !Array.isArray(valueCalendar)
@@ -24,7 +23,9 @@ export const CalendarPage: FC = () => {
         onChange={setValueCalendar}
         value={valueCalendar}
       />
-      <pre>{JSON.stringify(formattedValueCalendar, null, 2)}</pre>
+      <div className="CalendarPage__value">
+        <span>{JSON.stringify(formattedValueCalendar, null, 2)}</span>
+      </div>
     </section>
   )
 }

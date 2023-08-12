@@ -40,6 +40,7 @@ import {
   FeaturesPage,
   MainHooksPage,
   AboutPage,
+  CalendarPage,
 } from "./pages"
 import "./App.scss"
 
@@ -140,7 +141,10 @@ const router = createBrowserRouter([
             path: EFeaturedRoutes.Autocomplete,
             element: <AutocompletePage />,
           },
-
+          {
+            path: EFeaturedRoutes.Calendar,
+            element: <CalendarPage />,
+          },
           {
             path: EFeaturedRoutes.Checkbox,
             element: <CheckboxPage />,

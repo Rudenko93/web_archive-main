@@ -18,6 +18,7 @@ export enum EFeaturedRoutes {
   Main = "",
   Accordion = "accordion",
   Autocomplete = "autocomplete",
+  Calendar = "calendar",
   Checkbox = "checkbox",
   Copy = "copy",
   DocumentViewer = "documentViewer",

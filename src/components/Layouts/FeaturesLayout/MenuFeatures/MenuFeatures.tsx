@@ -7,6 +7,7 @@ import "./MenuFeatures.scss"
 const navList = [
   EFeaturedRoutes.Accordion,
   EFeaturedRoutes.Autocomplete,
+  EFeaturedRoutes.Calendar,
   EFeaturedRoutes.Checkbox,
   EFeaturedRoutes.Copy,
   EFeaturedRoutes.DocumentViewer,

@@ -1,4 +1,7 @@
 .CalendarPage {
   display: flex;
   flex-direction: column;
+  &__value {
+    display: flex;
+  }
 }
