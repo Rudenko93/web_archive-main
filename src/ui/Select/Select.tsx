@@ -1,7 +1,6 @@
 import { memo } from "react"
 import { default as ReactSelect } from "react-select"
 import clsx from "clsx"
-
 import { ETheme } from "enums"
 import { useMounted } from "hooks/useMounted"
 import { generateUUID } from "utils"
@@ -30,6 +29,7 @@ const SelectComponent: React.FC<TSelectProps> = ({
   styles,
   theme = ETheme.Light,
   value,
+  placeholder,
 }) => {
   const uuid = generateUUID()
   const { hasMounted } = useMounted()
@@ -53,6 +53,7 @@ const SelectComponent: React.FC<TSelectProps> = ({
       options={options}
       styles={!styles && theme ? selectStyles(theme) : styles}
       value={value}
+      placeholder={placeholder}
     />
   ) : null
 }

@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         element: <UiPage />,
         children: [
           {
-            path: EUiRoutes.Main,
+            path: "",
             element: <MainUiPage />,
           },
 
@@ -130,7 +130,7 @@ const router = createBrowserRouter([
         element: <FeaturesPage />,
         children: [
           {
-            path: EFeaturedRoutes.Main,
+            path: "",
             element: <MainFeaturesPage />,
           },
           {

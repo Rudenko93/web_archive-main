@@ -12,7 +12,6 @@ const CURRENT_COLOR = "currentColor"
 const BORDER_RADIUS = "4px"
 const CURSOR = "pointer"
 const TRANSITION = "all 0.15s"
-const TRANSPARENT = "transparent"
 const Z_INDEX = 10
 
 export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
@@ -90,7 +89,7 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
       color: COLOR_GRAY,
     },
     singleValue: {
-      color: CURRENT_COLOR,
+      color: COLOR_BLACK,
     },
     option: {
       backgroundColor: COLOR_WHITE,

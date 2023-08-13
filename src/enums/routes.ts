@@ -1,5 +1,4 @@
 export enum EUiRoutes {
-  Main = "",
   Avatar = "avatar",
   Button = "button",
   Breadcrumbs = "breadcrumbs",
@@ -15,7 +14,6 @@ export enum EUiRoutes {
 }
 
 export enum EFeaturedRoutes {
-  Main = "",
   Accordion = "accordion",
   Autocomplete = "autocomplete",
   Calendar = "calendar",
