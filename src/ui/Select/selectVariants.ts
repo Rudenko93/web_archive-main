@@ -4,6 +4,7 @@ import type { TSelectVariantStyle } from "./types"
 const COLOR_PRIMARY = "#319795"
 const COLOR_PRIMARY_HOVER = "#2c7a7b"
 const COLOR_WHITE = "#fff"
+const COLOR_BLACK = "#2d3748"
 const COLOR_DARKNESS = "#524090"
 const COLOR_GRAY = "#aaaaaa"
 const COLOR_GRADIENT = "linear-gradient(to right, #66b1c0, #8161c5)"
@@ -70,7 +71,7 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
   // Light theme
   LIGHT: {
     control: {
-      background: TRANSPARENT,
+      background: COLOR_WHITE,
       border: `1px solid ${COLOR_GRAY}`,
       borderRadius: BORDER_RADIUS,
       cursor: CURSOR,
@@ -94,7 +95,7 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
     option: {
       backgroundColor: COLOR_WHITE,
       borderRadius: "0",
-      color: CURRENT_COLOR,
+      color: COLOR_BLACK,
       cursor: CURSOR,
       transition: TRANSITION,
       ":active": {

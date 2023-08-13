@@ -17,6 +17,7 @@ import { ReactComponent as ArrowL } from "../assets/icons/arrow-l.svg"
 import { ReactComponent as ArrowR } from "../assets/icons/arrow-r.svg"
 import { ReactComponent as Home } from "../assets/icons/home.svg"
 import { ReactComponent as Web } from "../assets/icons/web.svg"
+import { ReactComponent as Search } from "../assets/icons/search.svg"
 
 export type IconType =
   | "Git"
@@ -38,6 +39,7 @@ export type IconType =
   | "ArrowR"
   | "Home"
   | "Web"
+  | "Search"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -59,4 +61,5 @@ export const iconTypes = new Map([
   ["ArrowR", <ArrowR />],
   ["Home", <Home />],
   ["Web", <Web />],
+  ["Search", <Search />],
 ])

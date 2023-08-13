@@ -5,6 +5,12 @@
 
   &-Select {
     max-width: 220px;
-    width: 100%;
+    width: 220px;
+    border-radius: 10px 10px 10px 10px;
+
+    &__active {
+      max-width: 520px;
+      width: 520px;
+    }
   }
 }
