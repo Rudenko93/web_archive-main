@@ -32,6 +32,7 @@ export const Search: FC = () => {
         onFocus={onFocus}
         theme={theme}
         value={selectedOption}
+        placeholder={"custom placeholder component"}
       />
     </div>
   )

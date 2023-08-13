@@ -4,13 +4,18 @@
   }
 
   &-Select {
-    max-width: 220px;
-    width: 220px;
-    border-radius: 10px 10px 10px 10px;
+    max-width: 100%;
+    width: 100px;
+    height: 40px;
 
     &__active {
+      position: absolute !important;
       max-width: 520px;
-      width: 520px;
+      width: 100%;
+      min-width: 325px;
+      top: 0;
+      left: 20px;
+      z-index: 99;
     }
   }
 }

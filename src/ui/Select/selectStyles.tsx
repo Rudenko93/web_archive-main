@@ -22,6 +22,7 @@ export const selectStyles = (
       borderRadius: style.control.borderRadius,
       cursor: style.control.cursor,
       transition: style.control.transition,
+      minHeight: "39px",
       ":active": style.control[":active"],
       ":hover": style.control[":hover"],
     }),

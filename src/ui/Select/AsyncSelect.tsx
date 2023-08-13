@@ -6,7 +6,7 @@ import clsx from "clsx"
 import { ETheme } from "enums"
 import { useMounted } from "hooks"
 import { generateUUID } from "utils"
-import { StyledDropdownIndicator } from "./selectComponentsStyles"
+import { StyledDropdownIndicatorSearch } from "./selectComponentsStyles"
 import { selectStyles } from "./selectStyles"
 import type { TAsyncSelectProps } from "./types"
 import "./Select.scss"
@@ -38,7 +38,11 @@ const AsyncSelectComponent: FC<TAsyncSelectProps> = ({
   return hasMounted ? (
     <ReactAsyncSelect
       className={clsx("Select", className)}
-      components={{ DropdownIndicator: StyledDropdownIndicator, ...components }}
+      components={{
+        DropdownIndicator: StyledDropdownIndicatorSearch,
+        IndicatorSeparator: () => null,
+        ...components,
+      }}
       data-testid={dataTestId}
       defaultValue={defaultValue}
       getOptionLabel={getOptionLabel}

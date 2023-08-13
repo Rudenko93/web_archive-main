@@ -20,7 +20,7 @@ export const VARIANTS: { [key in ETheme]: TSelectVariantStyle } = {
   DARK: {
     control: {
       background: COLOR_GRADIENT,
-      border: `1px solid ${TRANSPARENT}`,
+      border: `1px solid ${COLOR_GRAY}`,
       borderRadius: BORDER_RADIUS,
       cursor: CURSOR,
       transition: TRANSITION,

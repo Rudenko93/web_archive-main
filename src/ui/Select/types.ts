@@ -35,6 +35,7 @@ type TBaseSelectProps = {
   isDisabled?: boolean
   isMulti?: TSelectMultiType
   isSearchable?: boolean
+  isSelectOpened?: boolean
   menuPlacement?: MenuPlacement
   menuPosition?: MenuPosition
   name?: string
@@ -50,6 +51,7 @@ type TBaseSelectProps = {
     | undefined
   theme?: ETheme
   value?: SingleValue<TSelectOption> | MultiValue<TSelectOption>
+  searchVariant?: boolean
 }
 
 export type TAsyncSelectLoadOptionsCallback = (

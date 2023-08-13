@@ -14,6 +14,14 @@
   &-IconDropdownIndicator__open {
     transform: rotate(180deg);
   }
+
+  &-IconDropdownIndicatorSearch {
+    align-self: start;
+  }
+
+  &-IconDropdownIndicatorSearch__open {
+    display: none;
+  }
 }
 
 .theme-dark {

@@ -29,6 +29,27 @@ export const StyledDropdownIndicator = (
   )
 }
 
+export const StyledDropdownIndicatorSearch = (
+  props: JSX.IntrinsicAttributes &
+    DropdownIndicatorProps<TSelectOption, boolean, GroupBase<TSelectOption>>
+) => {
+  const menuIsOpen = props.selectProps.menuIsOpen
+  return (
+    <div className="Select-DropdownIndicatorSearch">
+      <components.DropdownIndicator {...props}>
+        <Icon
+          className={clsx("Select-IconDropdownIndicatorSearch", {
+            "Select-IconDropdownIndicatorSearch__open": menuIsOpen,
+          })}
+          type="Search"
+          width={16}
+          height={16}
+        />
+      </components.DropdownIndicator>
+    </div>
+  )
+}
+
 export const StyledMultiValueRemove = (
   props: JSX.IntrinsicAttributes &
     MultiValueRemoveProps<TSelectOption[], boolean, GroupBase<TSelectOption[]>>
