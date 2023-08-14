@@ -223,7 +223,6 @@ export const App: React.FC = () => {
     <ThemeProvider value={themeState}>
       <div className="App">
         <RouterProvider router={router} />
-        {/* <>{useScrollToTop()}</> */}
       </div>
     </ThemeProvider>
   )

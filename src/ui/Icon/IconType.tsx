@@ -18,6 +18,9 @@ import { ReactComponent as ArrowR } from "../assets/icons/arrow-r.svg"
 import { ReactComponent as Home } from "../assets/icons/home.svg"
 import { ReactComponent as Web } from "../assets/icons/web.svg"
 import { ReactComponent as Search } from "../assets/icons/search.svg"
+import { ReactComponent as Hook } from "../assets/icons/hook.svg"
+import { ReactComponent as Feature } from "../assets/icons/feature.svg"
+import { ReactComponent as Ui } from "../assets/icons/ui.svg"
 
 export type IconType =
   | "Git"
@@ -40,6 +43,9 @@ export type IconType =
   | "Home"
   | "Web"
   | "Search"
+  | "Hook"
+  | "Feature"
+  | "Ui"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -62,4 +68,7 @@ export const iconTypes = new Map([
   ["Home", <Home />],
   ["Web", <Web />],
   ["Search", <Search />],
+  ["Hook", <Hook />],
+  ["Feature", <Feature />],
+  ["Ui", <Ui />],
 ])
