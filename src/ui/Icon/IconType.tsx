@@ -21,6 +21,7 @@ import { ReactComponent as Search } from "../assets/icons/search.svg"
 import { ReactComponent as Hook } from "../assets/icons/hook.svg"
 import { ReactComponent as Feature } from "../assets/icons/feature.svg"
 import { ReactComponent as Ui } from "../assets/icons/ui.svg"
+import { ReactComponent as About } from "../assets/icons/about.svg"
 
 export type IconType =
   | "Git"
@@ -46,6 +47,7 @@ export type IconType =
   | "Hook"
   | "Feature"
   | "Ui"
+  | "About"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -71,4 +73,5 @@ export const iconTypes = new Map([
   ["Hook", <Hook />],
   ["Feature", <Feature />],
   ["Ui", <Ui />],
+  ["About", <About />],
 ])

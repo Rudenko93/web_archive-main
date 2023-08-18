@@ -2,15 +2,17 @@ import { NavLink } from "react-router-dom"
 import { ThemeSwitcherCustom } from "components"
 import { EMainRoutes } from "enums"
 import { toCapitalize } from "utils"
-import { Icon } from "ui"
+import { Icon, IconType } from "ui"
 import { Search } from "./Search"
 import "./Menu.scss"
 
-const navList = [
-  [EMainRoutes.Features, "features/accordion"],
-  [EMainRoutes.Ui, "ui/avatar"],
-  [EMainRoutes.Hooks, "hooks"],
-  [EMainRoutes.About, "about"],
+type NavListItemType = [EMainRoutes, string, IconType]
+
+const navList: Array<NavListItemType> = [
+  [EMainRoutes.Features, "features/accordion", "Feature"],
+  [EMainRoutes.Ui, "ui/avatar", "Ui"],
+  [EMainRoutes.Hooks, "hooks", "Hook"],
+  [EMainRoutes.About, "about", "About"],
 ]
 
 export const Menu = () => {
@@ -20,7 +22,7 @@ export const Menu = () => {
         <Search />
         <NavLink to={"/"} key={"/"} className={"logo"}>
           <Icon type="Web" />
-          Web Archive
+          <span className="menu-left-icon__desc">Web Archive</span>
         </NavLink>
         <ThemeSwitcherCustom />
       </div>
@@ -32,6 +34,7 @@ export const Menu = () => {
             }
             to={link[1]}
             key={link[1]}>
+            <Icon type={link[2]} />
             {toCapitalize(link[0])}
           </NavLink>
         ))}

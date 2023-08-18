@@ -53,3 +53,67 @@
     gap: 15px;
   }
 }
+
+@include xl {
+  .menu {
+    &-link {
+      font-size: 16px;
+      padding: 18px 10px;
+    }
+  }
+}
+
+@include lg {
+  .menu {
+    &-link {
+      font-size: 16px;
+      padding: 18px 10px;
+    }
+
+    &-left {
+      gap: 10px;
+      &-icon__desc {
+        display: none;
+      }
+    }
+  }
+}
+
+@include lg {
+  .menu {
+    &-link {
+      font-size: 16px;
+      padding: 18px 10px;
+    }
+
+    &-left {
+      gap: 10px;
+      &-icon__desc {
+        display: none;
+      }
+    }
+  }
+}
+
+@include md {
+  .menu {
+    &-list {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      bottom: 0;
+      color: #000;
+      left: 0;
+
+      position: fixed;
+      height: 43px;
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
