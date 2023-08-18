@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   height: 100%;
 
   &-Inner {
@@ -16,7 +15,6 @@
   }
 
   &-Content {
-    padding: 24px;
     width: 100%;
     height: auto;
     border-radius: 16px;
@@ -24,17 +22,31 @@
   }
 
   &-Title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
   &-FormFieldGroup {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &-Control {
     display: flex;
     justify-content: center;
+  }
+}
+
+@include md {
+  .FormPage {
+    &-Content {
+      padding: 0;
+    }
+    &-FormFieldGroup {
+      margin-bottom: 10px;
+    }
+    &-Title {
+      margin: 5px auto;
+    }
   }
 }
