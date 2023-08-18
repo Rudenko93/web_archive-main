@@ -12,7 +12,7 @@ export const PortalPage: FC = () => {
         className="MyPortal"
         element="span"
         elementFindById="react-modals">
-        <h3>This is portal container</h3>
+        <h3>Portal container</h3>
       </Portal>
     </section>
   )

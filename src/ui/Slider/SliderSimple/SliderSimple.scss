@@ -10,5 +10,15 @@
 
   &-Image {
     cursor: pointer;
+
+    &__tablet {
+      max-width: 250px !important;
+      max-height: 250px !important;
+    }
+
+    &__mobile {
+      max-width: 150px !important;
+      max-height: 150px !important;
+    }
   }
 }

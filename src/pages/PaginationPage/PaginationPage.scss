@@ -1,6 +1,21 @@
+@import "styles";
+
 .PaginationPage {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
+}
+
+@include sm {
+  .PaginationPage {
+    li {
+      width: 20px;
+      height: 20px;
+      a {
+        width: 20px;
+        height: 22px;
+        font-size: 14px;
+      }
+    }
+  }
 }

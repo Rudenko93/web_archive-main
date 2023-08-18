@@ -92,8 +92,8 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: var(--slider-arrow-backgroundColor);
     border: 1px solid $color-mercury-gray;
     border-radius: 50%;
@@ -123,5 +123,17 @@
       // height: 16px;
       // width: 8px;
     }
+  }
+}
+
+@include lg {
+  .slick-slide img {
+    max-height: 250px;
+  }
+}
+
+@include sm {
+  .slick-slide img {
+    max-height: 150px;
   }
 }

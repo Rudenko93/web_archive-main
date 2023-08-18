@@ -41,6 +41,8 @@
   .FormPage {
     &-Content {
       padding: 0;
+      border-radius: none;
+      box-shadow: none;
     }
     &-FormFieldGroup {
       margin-bottom: 10px;

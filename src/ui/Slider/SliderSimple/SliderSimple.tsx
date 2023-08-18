@@ -4,13 +4,12 @@ import { memo } from "react"
 import type { FC } from "react"
 import Slider from "react-slick"
 import { useMediaQuery } from "react-responsive"
-
+import { SLIDER_SIMPLE_SETTINGS } from "./settings"
+import { TSliderSimpleProps } from "./types"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "./SliderSimple.scss"
 import "../Slider.scss"
-import { SLIDER_SIMPLE_SETTINGS } from "./settings"
-import { TSliderSimpleProps } from "./types"
 
 const SliderSimpleComponent: FC<TSliderSimpleProps> = (props) => {
   const {
@@ -22,7 +21,8 @@ const SliderSimpleComponent: FC<TSliderSimpleProps> = (props) => {
   } = props
 
   const settings = SLIDER_SIMPLE_SETTINGS(props).settings
-  const isMobileScreen = useMediaQuery({ query: "(max-width: 100px)" })
+  const isMobileScreen = useMediaQuery({ query: "(max-width: 640px)" })
+  const isTabletScreen = useMediaQuery({ query: "(max-width: 1280px)" })
 
   return (
     <Slider {...settings} data-testid={dataTestId}>
@@ -34,6 +34,7 @@ const SliderSimpleComponent: FC<TSliderSimpleProps> = (props) => {
                 alt={alt}
                 className={clsx("SliderSimple-Image", {
                   "SliderSimple-Image__mobile": isMobileScreen,
+                  "SliderSimple-Image__tablet": isTabletScreen,
                 })}
                 height={height}
                 src={image}

@@ -20,10 +20,10 @@ export const Pagination: FC<TProps> = ({
   className,
   forcePage,
   initialPage,
-  marginPagesDisplayed = 3,
+  marginPagesDisplayed = 2,
   onChange,
   pageCount,
-  pageRangeDisplayed = 3,
+  pageRangeDisplayed = 2,
   theme,
 }) => {
   const isDark = theme === ETheme.Dark

@@ -29,6 +29,7 @@
   &-list {
     display: flex;
     align-items: center;
+    z-index: 10;
   }
 
   &-link {
@@ -63,7 +64,7 @@
   .menu {
     &-link {
       font-size: 16px;
-      padding: 15px 10px;
+      padding: 16px 10px;
     }
   }
 }
@@ -72,23 +73,7 @@
   .menu {
     &-link {
       font-size: 16px;
-      padding: 15px 10px;
-    }
-
-    &-left {
-      gap: 10px;
-      &-icon__desc {
-        display: none;
-      }
-    }
-  }
-}
-
-@include lg {
-  .menu {
-    &-link {
-      font-size: 16px;
-      padding: 15px 10px;
+      padding: 16px 10px;
     }
 
     &-left {

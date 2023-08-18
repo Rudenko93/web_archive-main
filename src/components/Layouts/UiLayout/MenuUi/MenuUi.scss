@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
   }
 
   &-link {
@@ -67,6 +68,8 @@
     margin-top: 18px;
     &-list {
       padding-right: 5px;
+
+      margin: 0;
     }
     &-link {
       margin: 6px auto;
@@ -77,6 +80,9 @@
 
 @include sm {
   .menuUi {
+    &-list {
+      margin: 0;
+    }
     &-link {
       font-size: 13px;
     }

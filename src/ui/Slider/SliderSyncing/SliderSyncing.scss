@@ -14,7 +14,8 @@
         border: 2px solid transparent;
         border-radius: $border-radius;
         padding: 6px;
-        height: 230px;
+        max-width: 230px;
+        max-height: 230px;
         transition: $transition;
       }
 
@@ -28,6 +29,17 @@
     .slick-slide.slick-current {
       img {
         border-color: $color-primary;
+      }
+    }
+  }
+}
+
+@include sm {
+  .SliderSyncing {
+    &-Nav {
+      img {
+        width: 20vw;
+        height: 20vw;
       }
     }
   }
