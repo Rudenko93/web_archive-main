@@ -1,3 +1,5 @@
+@import "styles";
+
 .Search {
   &__value {
     display: flex;
@@ -12,10 +14,29 @@
       position: absolute !important;
       max-width: 520px;
       width: 100%;
-      min-width: 325px;
+      min-width: 330px;
       top: 0;
-      left: 20px;
       z-index: 99;
+    }
+  }
+}
+
+@include sm {
+  .Search {
+    &-Select {
+      max-width: 100%;
+      width: 100px;
+      height: 40px;
+
+      &__active {
+        position: absolute !important;
+        max-width: 330px;
+        width: 100%;
+        min-width: 330px;
+        top: 0;
+        left: 3px;
+        z-index: 99;
+      }
     }
   }
 }

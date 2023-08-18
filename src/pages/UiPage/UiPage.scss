@@ -1,12 +1,32 @@
+@import "styles";
+
 .uiPage {
   &-container {
     max-width: 1440px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;
-    padding: 0 15px 100px 20px;
+    padding: 0 15px 0 15px;
     display: grid;
     grid-template-columns: 300px minmax(0, 1fr);
     gap: 20px;
+  }
+}
+
+@include lg {
+  .uiPage {
+    &-container {
+      grid-template-columns: 200px minmax(0, 1fr);
+    }
+  }
+}
+
+@include md {
+  .uiPage {
+    &-container {
+      margin: 0 auto;
+      padding: 0 10px 0 10px;
+      grid-template-columns: 110px minmax(0, 1fr);
+    }
   }
 }

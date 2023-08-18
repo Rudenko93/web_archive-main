@@ -51,3 +51,34 @@
     }
   }
 }
+
+@include lg {
+  .menuUi {
+    max-width: 200px;
+    &-link {
+      font-size: 16px;
+    }
+  }
+}
+
+@include md {
+  .menuUi {
+    max-width: 110px;
+    margin-top: 18px;
+    &-list {
+      padding-right: 5px;
+    }
+    &-link {
+      margin: 6px auto;
+      font-size: 14px;
+    }
+  }
+}
+
+@include sm {
+  .menuUi {
+    &-link {
+      font-size: 13px;
+    }
+  }
+}
