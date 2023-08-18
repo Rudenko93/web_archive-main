@@ -34,7 +34,7 @@ export const Menu = () => {
             }
             to={link[1]}
             key={link[1]}>
-            <Icon type={link[2]} />
+            <Icon type={link[2]} className="menu-link-icon" />
             {toCapitalize(link[0])}
           </NavLink>
         ))}

@@ -44,6 +44,10 @@
       background-color: $color-text-active-light;
       color: $color-white;
     }
+
+    &-icon {
+      display: none;
+    }
   }
 
   &-right {
@@ -98,11 +102,9 @@
 @include md {
   .menu {
     &-list {
-      display: flex;
       justify-content: center;
       width: 100%;
-      bottom: 0;
-      color: #000;
+      bottom: 8px;
       left: 0;
 
       position: fixed;
@@ -114,6 +116,28 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 8px 10px;
+      background-color: $color-link;
+      font-size: 14px;
+      &__active {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+
+      &-icon {
+        display: flex;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .theme-dark {
+    .menu {
+      &-link {
+        background-color: $color-link-dark;
+        &__active {
+          background-color: $color-link-active-dark;
+        }
+      }
     }
   }
 }
