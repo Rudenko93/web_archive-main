@@ -15,10 +15,7 @@ export const AccordionPage = () => {
           optio?
         </span>
         <span style={{ textAlign: "left" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-          quisquam harum earum ut veniam alias ipsa est delectus eum voluptas,
-          distinctio eaque eos, cumque aliquam inventore necessitatibus
-          excepturi illo enim?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </span>
       </Accordion>
     </section>

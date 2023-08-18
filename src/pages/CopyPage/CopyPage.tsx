@@ -2,7 +2,7 @@ import { useState } from "react"
 import type { FC } from "react"
 import clsx from "clsx"
 import { ETypographyVariant, Icon, TooltipCustom, Typography } from "ui"
-import { useCopyToClipboard } from "hooks"
+import { useCopyToClipboard, useMediaQuery } from "hooks"
 import "./CopyPage.scss"
 
 export const CopyPage: FC = () => {
@@ -13,6 +13,8 @@ export const CopyPage: FC = () => {
     userId2: false,
   })
   const [value, copy] = useCopyToClipboard()
+
+  const matches = useMediaQuery("(min-width: 768px)")
 
   const handleCopy = async (text: string, name: string): Promise<void> => {
     const isCopied = await copy(text)
@@ -40,7 +42,10 @@ export const CopyPage: FC = () => {
       <div className="CopyPage__details">
         <div className="CopyPage__label">User ID</div>
         <div>{userId1}</div>
-        <TooltipCustom behavior="click" content="Copied!" placement="right">
+        <TooltipCustom
+          behavior="click"
+          content="Copied!"
+          placement={matches ? "right" : "left"}>
           <Icon
             className={clsx("CopyPage__icon", {
               CopyPage__icon_active: hasCopied.userId1,
@@ -54,7 +59,10 @@ export const CopyPage: FC = () => {
       <div className="CopyPage__details">
         <div className="CopyPage__label">User ID</div>
         <div>{userId2}</div>
-        <TooltipCustom behavior="click" content="Copied!" placement="right">
+        <TooltipCustom
+          behavior="click"
+          content="Copied!"
+          placement={matches ? "right" : "left"}>
           <Icon
             className={clsx("CopyPage__icon", {
               CopyPage__icon_active: hasCopied.userId2,
