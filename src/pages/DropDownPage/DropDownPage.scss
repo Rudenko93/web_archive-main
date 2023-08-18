@@ -3,17 +3,17 @@
 .DropDownPage {
   display: flex;
   flex-direction: column;
-  &__Navigation {
+  &__mavigation {
     width: 100%;
   }
 
-  &__Menu {
+  &__menu {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
 
-  &__MenuItem {
+  &__menuItem {
     position: relative;
     padding: 0 50px;
     color: $color-text;
@@ -66,11 +66,11 @@ $transition: 0.15s;
     transition: opacity $transition;
   }
 
-  &__Menu {
+  &__menu {
     padding: 4px;
   }
 
-  &__MenuItem {
+  &__menuItem {
     display: flex;
     align-items: center;
     margin: 3px;
@@ -88,7 +88,7 @@ $transition: 0.15s;
 
 .theme-dark {
   .DropDownPage {
-    &__Navigation {
+    &__navigation {
       span {
         color: $color-white;
       }
@@ -96,11 +96,20 @@ $transition: 0.15s;
     .DropDownCatalog {
       background-color: $color-dark-background;
       color: $color-white;
-      &__MenuItem {
+      &__menuItem {
         &:hover {
           background-color: $color-dark-background-hover;
         }
       }
+    }
+  }
+}
+
+@include sm {
+  .DropDownPage {
+    &__menu {
+      flex-direction: column;
+      gap: 20px;
     }
   }
 }
