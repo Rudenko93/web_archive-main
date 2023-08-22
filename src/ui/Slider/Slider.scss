@@ -1,6 +1,5 @@
 @import "styles";
 
-/* ----- Резиновая главная картинка в слайдере ----- */
 .slick-slide img {
   max-width: 100%;
 
@@ -55,7 +54,6 @@
   color: transparent;
 }
 
-/* ----- Общие свойства для всех слайдеров ----- */
 .slick-list,
 .slick-track {
   touch-action: pan-y;
@@ -120,8 +118,6 @@
     svg {
       display: flex;
       fill: $color-primary;
-      // height: 16px;
-      // width: 8px;
     }
   }
 }
