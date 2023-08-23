@@ -5,7 +5,7 @@ import "./HomePage.scss"
 
 export const HomePage: FC = () => {
   const navigate = useNavigate()
-  const handleClick = () => navigate("/ui/accordion")
+  const handleClick = () => navigate("/features/accordion")
 
   return (
     <div className="HomePage">
