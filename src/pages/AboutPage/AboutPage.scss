@@ -1,10 +1,12 @@
+@import "styles";
+
 .AboutPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__container {
-    width: 500px;
+    max-width: 500px;
     margin: 30px auto 0;
     .buttons {
       margin-top: 40px;

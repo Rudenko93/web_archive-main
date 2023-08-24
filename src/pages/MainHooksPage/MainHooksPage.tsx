@@ -14,7 +14,6 @@ export const MainHooksPage: FC = () => {
           align="center"
           as="h1"
           color="aqua"
-          classN="margin-top-0"
           variant={ETypographyVariant.ExtraLarge}>
           Hooks page
         </Typography>
