@@ -41,8 +41,13 @@ export const Menu = () => {
       </div>
 
       <div className="menu-right">
+        <a
+          href="https://github.com/Rudenko93/web_archive-main"
+          target="_blank"
+          rel="noreferrer">
+          <Icon type="Git" width={30} height={30} />
+        </a>
         <Icon type="Telegram" width={30} height={30} />
-        <Icon type="Git" width={30} height={30} />
       </div>
     </div>
   )
