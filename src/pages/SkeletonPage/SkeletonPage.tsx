@@ -1,9 +1,13 @@
 import { useState } from "react"
 import { ETypographyVariant, Skeleton, Typography } from "ui"
+import { useMediaQuery } from "hooks"
 import "./SkeletonPage.scss"
 
 export const SkeletonPage = () => {
   const [isLoading] = useState<boolean>(true)
+
+  const matches = useMediaQuery("(min-height: 768px)")
+
   return (
     <section className="SkeletonPage">
       <Typography as="h1" variant={ETypographyVariant.TextH1Bold}>
@@ -22,7 +26,11 @@ export const SkeletonPage = () => {
           }}
           className="ProductsList">
           {new Array(1).fill(1).map((product, index) => (
-            <Skeleton height="330px" width="330px" key={index} />
+            <Skeleton
+              height={matches ? "330px" : "150px"}
+              width="330px"
+              key={index}
+            />
           ))}
         </div>
       ) : (
