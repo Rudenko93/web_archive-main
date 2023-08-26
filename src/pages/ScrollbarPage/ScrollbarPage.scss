@@ -1,12 +1,24 @@
+@import "styles";
+
 .ScrollbarPage {
   display: flex;
   flex-direction: column;
 
   &__content {
     padding: 15px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border: 1px solid #ccc;
     overflow: auto;
+  }
+}
+
+@include sm {
+  .ScrollbarPage {
+    &__content {
+      padding: 15px;
+      width: 200px;
+      height: 200px;
+    }
   }
 }
