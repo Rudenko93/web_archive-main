@@ -38,7 +38,7 @@
   }
 
   &_disabled {
-    background-color: white;
+    background-color: inherit;
 
     svg {
       fill: $color-disabled;

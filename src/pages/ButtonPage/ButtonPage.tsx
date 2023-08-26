@@ -10,20 +10,15 @@ export const ButtonPage: React.FC = () => {
       </Typography>
       <Button>Click</Button>
       <br />
-      <br />
       <Button isDisabled>Disabled</Button>
       <br />
-      <br />
       <Button typeIcon="ArrowRight">Next</Button>
-      <br />
       <br />
       <Button typeIcon="ArrowRight" isDisabled>
         Next
       </Button>
       <br />
-      <br />
       <ButtonIcon typeIcon="Button" width={64} height={64} />
-      <br />
       <br />
       <ButtonIcon typeIcon="Button" width={64} height={64} isDisabled={true} />
     </section>
