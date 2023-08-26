@@ -1,4 +1,4 @@
-@import "styles/index";
+@import "styles";
 
 .Crumb {
   display: flex;
@@ -37,6 +37,16 @@
       svg {
         fill: #919191;
         transition: $transition;
+      }
+    }
+  }
+}
+
+@include sm {
+  .Crumb {
+    &-Icon {
+      &__arrow {
+        margin: 0 5px;
       }
     }
   }
