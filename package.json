@@ -17,6 +17,8 @@
     "axios": "^1.4.0",
     "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
+    "draft-convert": "^2.1.13",
+    "draft-js": "^0.11.7",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-calendar": "^4.6.0",
@@ -69,6 +71,8 @@
     ]
   },
   "devDependencies": {
+    "@types/draft-convert": "^2.1.4",
+    "@types/draft-js": "^0.11.12",
     "@types/lodash": "^4.14.195",
     "@types/uuid": "^9.0.2",
     "node-sass": "^7.0.3"

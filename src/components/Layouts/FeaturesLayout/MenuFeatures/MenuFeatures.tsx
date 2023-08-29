@@ -20,6 +20,7 @@ const navList = [
   EFeaturedRoutes.Slider,
   EFeaturedRoutes.Switch,
   EFeaturedRoutes.Tabs,
+  EFeaturedRoutes.TextEditor,
   EFeaturedRoutes.Tooltip,
 ]
 
