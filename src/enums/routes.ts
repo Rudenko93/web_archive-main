@@ -29,6 +29,7 @@ export enum EFeaturedRoutes {
   Select = "select",
   Switch = "switch",
   Tabs = "tabs",
+  TextEditor = "textEditor",
   Tooltip = "tooltip",
 }
 

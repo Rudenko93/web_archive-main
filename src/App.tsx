@@ -41,6 +41,7 @@ import {
   MainHooksPage,
   AboutPage,
   CalendarPage,
+  TextEditorPage,
 } from "./pages"
 import "./App.scss"
 
@@ -194,6 +195,10 @@ const router = createBrowserRouter([
           {
             path: EFeaturedRoutes.Tabs,
             element: <TabsPage />,
+          },
+          {
+            path: EFeaturedRoutes.TextEditor,
+            element: <TextEditorPage />,
           },
           {
             path: EFeaturedRoutes.Tooltip,
