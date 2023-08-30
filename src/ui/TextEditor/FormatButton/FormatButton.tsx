@@ -24,7 +24,7 @@ export const FormatButton: FC<TProps> = ({
         event.preventDefault()
         onToggle?.(style)
       }}>
-      <ButtonIcon isDisabled={!isActive} typeIcon={typeIcon as IconType} />
+      <ButtonIcon isDisabled={isActive} typeIcon={typeIcon as IconType} />
     </div>
   )
 }

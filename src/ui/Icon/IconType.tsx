@@ -22,6 +22,14 @@ import { ReactComponent as Hook } from "../assets/icons/hook.svg"
 import { ReactComponent as Feature } from "../assets/icons/feature.svg"
 import { ReactComponent as Ui } from "../assets/icons/ui.svg"
 import { ReactComponent as About } from "../assets/icons/about.svg"
+import { ReactComponent as Underline } from "../assets/icons/underline.svg"
+import { ReactComponent as H2 } from "../assets/icons/h2.svg"
+import { ReactComponent as Ol } from "../assets/icons/ol.svg"
+import { ReactComponent as Ul } from "../assets/icons/ul.svg"
+import { ReactComponent as Visibility } from "../assets/icons/visibility.svg"
+import { ReactComponent as VisibilityOff } from "../assets/icons/visibility-off.svg"
+import { ReactComponent as Bold } from "../assets/icons/bold.svg"
+import { ReactComponent as Highlight } from "../assets/icons/highlight.svg"
 
 export type IconType =
   | "Git"
@@ -48,6 +56,14 @@ export type IconType =
   | "Feature"
   | "Ui"
   | "About"
+  | "Underline"
+  | "H2"
+  | "Ol"
+  | "Ul"
+  | "Visibility"
+  | "VisibilityOff"
+  | "Bold"
+  | "Highlight"
 
 export const iconTypes = new Map([
   ["Telegram", <Telegram />],
@@ -74,4 +90,13 @@ export const iconTypes = new Map([
   ["Feature", <Feature />],
   ["Ui", <Ui />],
   ["About", <About />],
+
+  ["Underline", <Underline />],
+  ["H2", <H2 />],
+  ["Ol", <Ol />],
+  ["Ul", <Ul />],
+  ["Visibility", <Visibility />],
+  ["VisibilityOff", <VisibilityOff />],
+  ["Bold", <Bold />],
+  ["Highlight", <Highlight />],
 ])
