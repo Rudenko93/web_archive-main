@@ -38,7 +38,10 @@
   }
 
   &_active {
-    background-color: $color-primary-light;
+    background-color: $color-disabled;
+    &:hover {
+      background-color: $color-disabled;
+    }
   }
 
   &_disabled {

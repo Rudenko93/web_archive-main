@@ -24,7 +24,7 @@ export const TEXT_EDITOR_STYLE_TO_HTML = (style: TTextEditorTextStyle) => {
 export const TEXT_EDITOR_CUSTOM_STYLES = {
   HIGHLIGHT: {
     backgroundColor: "#8fcbe5",
-    color: "#fff",
+    color: "#086f83",
   },
 }
 

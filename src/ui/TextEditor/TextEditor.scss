@@ -1,4 +1,4 @@
-@import "styles/index";
+@import "styles";
 
 .TextEditor {
   h1,
@@ -85,5 +85,13 @@
 .TextEditor-Wrapper {
   &__hidePlaceholder .public-DraftEditorPlaceholder-root {
     display: none;
+  }
+}
+
+@include xl {
+  .TextEditor {
+    &-Sub {
+      padding: 8px;
+    }
   }
 }
