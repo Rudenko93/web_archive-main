@@ -1,4 +1,4 @@
-@import "../../styles/";
+@import "styles";
 
 .ButtonIcon {
   height: max-content;
@@ -35,6 +35,10 @@
     & path {
       fill: $color-primary-hover;
     }
+  }
+
+  &_active {
+    background-color: $color-primary-light;
   }
 
   &_disabled {
