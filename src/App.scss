@@ -19,12 +19,6 @@ body {
 
 .App {
   text-align: center;
-  color: #2d3748;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 a {
@@ -57,10 +51,4 @@ button {
 .theme-dark .icon-dark {
   color: #fff;
   fill: #fff;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
